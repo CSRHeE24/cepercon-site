@@ -3,6 +3,8 @@
 Site institucional da **Cepercon Pré-Moldados** (Imbuia/SC): estruturas pré-moldadas de concreto armado.
 *É pré-moldado pra vida toda.*
 
+**Site no ar:** https://csrhee24.github.io/cepercon-site/
+
 ## O que tem
 
 - **Cena 3D no fundo** (Three.js r128): um galpão pré-moldado, inspirado nas obras da Cepercon em Imbuia, é montado peça por peça por dois caminhões munck conforme a página rola, com a equipe guiando as peças.
