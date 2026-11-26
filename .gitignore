@@ -1,0 +1,13 @@
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+
+# Configurações locais do Claude (mantém só o servidor de pré-visualização)
+.claude/*
+!.claude/launch.json
+!.claude/serve.ps1

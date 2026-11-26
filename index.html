@@ -1,0 +1,1302 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cepercon Pré-Moldados | Imbuia - SC</title>
+<meta name="description" content="Cepercon Pré-Moldados: estruturas pré-moldadas de concreto armado em Imbuia, Santa Catarina. É pré-moldado pra vida toda. Solicite seu orçamento pelo WhatsApp.">
+<meta name="theme-color" content="#05070d">
+<link rel="icon" type="image/png" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#05070d;
+  --ink:#f5f5f7;
+  --muted:rgba(245,245,247,.68);
+  --faint:rgba(245,245,247,.42);
+  --blue:#2e68ff;
+  --sky:#5cc8ff;
+  --grad:linear-gradient(100deg,#9fe3ff 0%,#5cc8ff 25%,#2e68ff 65%,#3b3bff 100%);
+  --r:28px;
+  --max:1200px;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,-apple-system,BlinkMacSystemFont,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Inter Tight",Inter,-apple-system,sans-serif;font-weight:700;letter-spacing:-.035em;line-height:1.04}
+a{color:inherit;text-decoration:none}
+svg,img{display:block}
+::selection{background:var(--blue);color:#fff}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px;position:relative}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ---------- Cena ---------- */
+#scene{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:block;background:#1a2233}
+.veil{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:
+    radial-gradient(120% 90% at 50% 45%,rgba(5,7,13,0) 40%,rgba(5,7,13,.55) 100%),
+    linear-gradient(180deg,rgba(5,7,13,.5) 0%,rgba(5,7,13,.12) 30%,rgba(5,7,13,0) 60%,rgba(5,7,13,.6) 100%)}
+.shade{position:fixed;inset:0;z-index:1;pointer-events:none;background:rgba(5,7,13,.5);opacity:0}
+main,footer,header{position:relative;z-index:3}
+
+/* ---------- Liquid glass (estilo Apple) ---------- */
+.glass{position:relative;isolation:isolate;border-radius:var(--r);
+  background:linear-gradient(180deg,rgba(255,255,255,.10),rgba(255,255,255,.04));
+  -webkit-backdrop-filter:blur(18px) saturate(185%);backdrop-filter:blur(18px) saturate(185%);
+  box-shadow:
+    inset 0 0 0 .5px rgba(255,255,255,.38),
+    inset 1.5px 1.5px 1px -1px rgba(255,255,255,.95),
+    inset -1.5px -1.5px 1px -1px rgba(255,255,255,.55),
+    inset 0 0 22px rgba(255,255,255,.07),
+    0 14px 44px -14px rgba(0,0,0,.55)}
+.glass::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;
+  background:linear-gradient(165deg,rgba(255,255,255,.22) 0%,rgba(255,255,255,0) 28%,rgba(255,255,255,0) 72%,rgba(255,255,255,.08) 100%)}
+.glass::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;
+  background:radial-gradient(360px circle at var(--mx,50%) var(--my,-30%),rgba(255,255,255,.18),transparent 55%);
+  opacity:var(--glow,0);transition:opacity .45s var(--ease)}
+.glass:hover{--glow:1}
+html.lq-on .lq{backdrop-filter:url(#lg) blur(5px) saturate(200%) brightness(1.06)}
+html.lq-on .lq.thick,.thick{-webkit-backdrop-filter:blur(28px) saturate(170%) brightness(.72);backdrop-filter:blur(28px) saturate(170%) brightness(.72)}
+.thick{background:linear-gradient(180deg,rgba(30,36,52,.42),rgba(12,15,24,.5))}
+
+/* ---------- Botões cápsula ---------- */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:"Inter Tight",Inter,sans-serif;font-weight:600;font-size:1.02rem;letter-spacing:-.01em;padding:16px 28px;border-radius:999px;cursor:pointer;border:0;transition:transform .5s var(--ease),box-shadow .5s var(--ease),background .3s;white-space:nowrap;will-change:transform}
+.btn:active{transform:scale(.96)!important}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-blue{color:#fff;background:linear-gradient(180deg,#4d84ff,#2457f0);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -1px 0 rgba(0,0,0,.15),0 10px 30px -8px rgba(46,104,255,.75)}
+.btn-blue:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 16px 44px -8px rgba(46,104,255,.95)}
+.btn-glass{color:#fff}
+.btn .arrow{transition:transform .5s var(--ease)}
+.btn:hover .arrow{transform:translateX(4px)}
+
+/* ---------- Header ---------- */
+header{position:fixed;top:14px;left:0;right:0;z-index:50;padding:0 14px;pointer-events:none}
+.nav{pointer-events:auto;max-width:1080px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:7px 7px 7px 20px;border-radius:999px;transition:max-width .7s var(--ease),padding .7s var(--ease)}
+header.shrink .nav{max-width:860px}
+.logo-img{height:42px;width:auto;transition:height .6s var(--ease)}
+header.shrink .logo-img{height:36px}
+.nav ul{display:flex;gap:2px;list-style:none}
+.nav ul a{display:block;padding:9px 15px;border-radius:999px;font-size:.88rem;font-weight:500;color:var(--muted);transition:color .3s,background .3s}
+.nav ul a:hover,.nav ul a.on{color:#fff;background:rgba(255,255,255,.12)}
+.nav .btn{padding:11px 20px;font-size:.88rem}
+.menu-btn{display:none;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.12);color:#fff;cursor:pointer;place-items:center}
+.menu-btn svg{width:20px;height:20px}
+.progress{position:fixed;top:0;left:0;height:2px;width:100%;z-index:60;background:var(--grad);transform-origin:0 50%;transform:scaleX(0)}
+
+/* ---------- Hero ---------- */
+.hero{height:100vh;height:100svh;min-height:600px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
+.hero-in{will-change:transform,opacity,filter;padding:0 20px}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:8px 16px 8px 12px;border-radius:999px;font-size:.84rem;font-weight:500}
+.dot{width:7px;height:7px;border-radius:50%;background:#34c759;box-shadow:0 0 0 0 rgba(52,199,89,.7);animation:ping 2s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 9px rgba(52,199,89,0)}100%{box-shadow:0 0 0 0 rgba(52,199,89,0)}}
+.hero h1{font-size:clamp(3rem,9vw,8.4rem);font-weight:800;letter-spacing:-.05em;line-height:.92;margin:26px auto 24px;text-shadow:0 8px 40px rgba(0,0,0,.35)}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.08em}
+.hero h1 .ln>span{display:inline-block;transform:translateY(105%);filter:blur(10px);opacity:0;animation:rise 1.4s var(--ease) forwards;animation-delay:var(--d)}
+@keyframes rise{to{transform:none;filter:none;opacity:1}}
+.hero p.lead{font-size:clamp(1.05rem,1.6vw,1.32rem);color:rgba(245,245,247,.82);max-width:600px;margin:0 auto 36px;text-shadow:0 2px 20px rgba(0,0,0,.4)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.fade{opacity:0;transform:translateY(16px);filter:blur(6px);animation:fin 1.2s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes fin{to{opacity:1;transform:none;filter:none}}
+.scroll-cue{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;font-size:.74rem;font-weight:500;letter-spacing:.08em;color:var(--muted)}
+.scroll-cue i{width:1.5px;height:44px;background:linear-gradient(180deg,rgba(255,255,255,.8),rgba(255,255,255,0));position:relative;overflow:hidden}
+.scroll-cue i::after{content:"";position:absolute;left:0;top:-40%;width:100%;height:40%;background:#fff;animation:cue 1.8s var(--ease) infinite}
+@keyframes cue{to{top:100%}}
+
+/* ---------- Montagem (seção fixa) ---------- */
+#montagem{height:720vh;position:relative}
+.stick{position:sticky;top:0;height:100vh;height:100svh;display:flex;align-items:flex-end;padding-bottom:6vh}
+.stick .wrap{width:100%;display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.cap{width:min(460px,100%);padding:30px 32px 28px;border-radius:32px}
+.cap .k{display:flex;align-items:center;justify-content:space-between;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sky)}
+.cap .k b{font-family:"Inter Tight";font-size:.78rem;color:var(--faint);letter-spacing:.06em}
+.cap h3{font-size:clamp(1.7rem,3vw,2.5rem);margin:12px 0 10px;font-weight:700}
+.cap p{color:var(--muted);font-size:1rem}
+.cap .body{transition:opacity .45s var(--ease),transform .45s var(--ease),filter .45s var(--ease)}
+.cap .body.out{opacity:0;transform:translateY(10px);filter:blur(6px)}
+.cap .bar{margin-top:22px;height:4px;border-radius:4px;background:rgba(255,255,255,.14);overflow:hidden}
+.cap .bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:4px}
+.cap.done .k{color:#34c759}
+.dots{display:flex;flex-direction:column;gap:10px;padding:16px 12px;border-radius:999px}
+.dots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.28);transition:all .5s var(--ease)}
+.dots span.on{background:#fff;height:22px;border-radius:6px}
+.intro-m{position:absolute;top:14vh;left:0;right:0;text-align:center;pointer-events:none}
+.intro-m h2{font-size:clamp(2rem,4.6vw,4rem);font-weight:700;text-shadow:0 6px 30px rgba(0,0,0,.45)}
+.intro-m p{color:rgba(245,245,247,.8);margin-top:10px;font-size:1.1rem;text-shadow:0 2px 16px rgba(0,0,0,.5)}
+
+/* ---------- Seções ---------- */
+section.s{padding:150px 0;scroll-margin-top:40px}
+.eyebrow{font-size:.85rem;font-weight:600;color:var(--sky);letter-spacing:.02em}
+.h2{font-size:clamp(2.3rem,5.4vw,4.6rem);margin:12px 0 18px;font-weight:700}
+.sub{color:var(--muted);font-size:1.15rem;max-width:560px}
+
+/* Sobre — palavras acendendo */
+.big-text{font-family:"Inter Tight",Inter,sans-serif;font-weight:600;font-size:clamp(1.7rem,3.6vw,3.1rem);line-height:1.18;letter-spacing:-.03em;max-width:1000px}
+.big-text .wd{color:rgba(245,245,247,.16);transition:color .35s}
+.big-text .wd.lit{color:#f5f5f7}
+.big-text .wd.lit.hl{color:var(--sky)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:70px}
+.stat{padding:30px 26px}
+.stat strong{display:block;font-family:"Inter Tight";font-size:clamp(2.2rem,4vw,3.4rem);font-weight:700;letter-spacing:-.04em;line-height:1}
+.stat>span{display:block;margin-top:10px;color:var(--muted);font-size:.95rem}
+
+/* Obras — carrossel */
+.obras-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
+.car-ctrl{display:flex;gap:10px}
+.car-btn{width:52px;height:52px;border-radius:50%;border:0;color:#fff;cursor:pointer;display:grid;place-items:center;transition:transform .5s var(--ease),opacity .3s}
+.car-btn:hover{transform:scale(1.08)}
+.car-btn:disabled{opacity:.35;cursor:default;transform:none}
+.car-btn svg{width:20px;height:20px}
+.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+  padding:46px max(28px,calc((100vw - var(--max))/2 + 28px)) 30px;scroll-padding-inline:max(28px,calc((100vw - var(--max))/2 + 28px));cursor:grab}
+.track::-webkit-scrollbar{display:none}
+.track.drag{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto}
+.track.drag *{pointer-events:none}
+.obra{flex:none;width:clamp(270px,31vw,410px);aspect-ratio:4/5;scroll-snap-align:start;border-radius:30px;overflow:hidden;position:relative;transform:scale(var(--sc,1));opacity:var(--op,1);transition:transform .25s linear,opacity .25s linear;will-change:transform;user-select:none}
+.obra .ph{position:absolute;inset:0;display:grid;place-items:center;
+  background:radial-gradient(120% 80% at 20% 0%,rgba(92,200,255,.28),transparent 60%),radial-gradient(90% 70% at 100% 100%,rgba(46,104,255,.35),transparent 60%),linear-gradient(160deg,#1b2333,#0b0f18)}
+.obra .ph::before{content:"";position:absolute;inset:0;opacity:.18;background-image:linear-gradient(rgba(255,255,255,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.5) 1px,transparent 1px);background-size:34px 34px;-webkit-mask:radial-gradient(80% 60% at 50% 40%,#000,transparent);mask:radial-gradient(80% 60% at 50% 40%,#000,transparent)}
+.obra .ph svg{width:44%;max-width:170px;opacity:.9;transform:translateY(-18%)}
+.obra .ph small{position:absolute;top:18px;right:18px;font-size:.72rem;font-weight:600;color:rgba(255,255,255,.55);padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08)}
+.obra img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.obra:hover img{transform:scale(1.05)}
+.obra .shade-b{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.55) 100%);pointer-events:none}
+.obra .info{position:absolute;left:12px;right:12px;bottom:12px;padding:18px 20px;border-radius:22px}
+.obra .tag{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:600;color:var(--sky);text-transform:uppercase;letter-spacing:.08em}
+.obra h3{font-size:1.3rem;margin:6px 0 4px;font-weight:700}
+.obra .meta{font-size:.86rem;color:var(--muted)}
+.obra .ig{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:.86rem;font-weight:600;color:#fff;opacity:.9}
+.obra .ig:hover{opacity:1;color:var(--sky)}
+.obra .play{position:absolute;top:18px;left:18px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center}
+.obra .play svg{width:14px;height:14px;margin-left:2px}
+.car-bar{max-width:var(--max);margin:0 auto;padding:0 28px;display:flex;align-items:center;gap:16px}
+.car-bar .rail2{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.14);overflow:hidden}
+.car-bar .rail2 i{display:block;height:100%;width:30%;background:var(--grad);border-radius:3px;transform-origin:0 50%}
+.car-bar span{font-size:.82rem;color:var(--faint);font-variant-numeric:tabular-nums;white-space:nowrap}
+#obras{padding-bottom:120px}
+@media (max-width:640px){.obra{width:80vw}.track{padding:36px 16px 24px;scroll-padding-inline:16px}.car-bar{padding:0 16px}.car-ctrl{display:none}}
+
+/* Produtos */
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:60px}
+.product{padding:28px 24px 24px;display:flex;flex-direction:column;min-height:290px;transition:transform .7s var(--ease)}
+.product .ico{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;margin-bottom:auto;background:linear-gradient(160deg,rgba(92,200,255,.28),rgba(46,104,255,.22));box-shadow:inset 0 1px 0 rgba(255,255,255,.4),inset 0 0 0 .5px rgba(255,255,255,.25)}
+.product .ico svg{width:28px;height:28px}
+.product h3{font-size:1.4rem;margin:40px 0 10px;font-weight:700}
+.product p{color:var(--muted);font-size:.96rem}
+.product .go{margin-top:20px;display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.92rem;color:var(--sky)}
+.product .go span{transition:transform .5s var(--ease)}
+.product:hover .go span{transform:translateX(4px)}
+
+.product .pic{position:relative;aspect-ratio:4/3;margin:-12px -10px 18px;border-radius:20px;display:grid;place-items:center;overflow:hidden;
+  background:radial-gradient(70% 60% at 50% 62%,rgba(92,200,255,.20),rgba(46,104,255,.06) 55%,transparent 75%),linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,0))}
+.product .pic .ico{margin:0}
+.product .pic img{width:100%;height:100%;object-fit:contain;opacity:0;transform:translateY(8px) scale(.97);transition:opacity .8s var(--ease),transform 1s var(--ease)}
+.product .pic.ready img{opacity:1;transform:none}
+.product:hover .pic.ready img{transform:translateY(-4px) scale(1.05)}
+.product h3{margin:4px 0 8px!important}
+/* Diferenciais */
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:60px}
+.feat{padding:30px 26px}
+.feat .ic{font-family:"Inter Tight";font-weight:700;font-size:2.6rem;letter-spacing:-.04em;margin-bottom:28px;line-height:1}
+.feat h3{font-size:1.15rem;margin-bottom:8px}
+.feat p{color:var(--muted);font-size:.94rem}
+
+/* Processo */
+.steps{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:70px}
+.rail{position:absolute;left:25px;right:25px;top:25px;height:2px;background:rgba(255,255,255,.14);border-radius:2px}
+.rail i{position:absolute;inset:0;background:var(--grad);transform-origin:0 50%;transform:scaleX(var(--fill,0));border-radius:2px;box-shadow:0 0 14px rgba(92,200,255,.8)}
+.step{padding-top:74px;position:relative}
+.step .bubble{position:absolute;top:0;left:0;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-family:"Inter Tight";font-weight:700;font-size:.95rem;transition:background .5s,box-shadow .5s}
+.step.lit .bubble{background:linear-gradient(180deg,#4d84ff,#2457f0);box-shadow:0 0 30px rgba(46,104,255,.8),inset 0 1px 0 rgba(255,255,255,.5)}
+.step-card{padding:26px 24px}
+.step h3{font-size:1.12rem;margin-bottom:8px}
+.step p{color:var(--muted);font-size:.94rem}
+
+/* Contato */
+.cta{padding:80px 48px;text-align:center;border-radius:40px;overflow:hidden}
+.cta h2{font-size:clamp(2.2rem,5vw,4.4rem);font-weight:800;letter-spacing:-.045em;margin-bottom:18px}
+.cta p{color:var(--muted);font-size:1.15rem;margin-bottom:32px}
+.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:16px;align-items:start;margin-top:16px}
+.clist{display:grid;gap:12px}
+.citem{display:flex;gap:16px;align-items:center;padding:20px 22px;border-radius:24px;transition:transform .6s var(--ease)}
+.citem:hover{transform:scale(1.015)}
+.citem .ci{width:46px;height:46px;flex:none;border-radius:14px;background:linear-gradient(180deg,#4d84ff,#2457f0);display:grid;place-items:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.45)}
+.citem .ci svg{width:22px;height:22px}
+.citem small{display:block;font-size:.76rem;color:var(--faint);font-weight:500}
+.citem b{font-size:1.06rem;font-weight:600}
+form{padding:36px}
+form h3{font-size:1.6rem;margin-bottom:6px}
+form>p{color:var(--muted);margin-bottom:24px;font-size:.96rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{position:relative;margin-bottom:12px}
+.field input,.field select,.field textarea{width:100%;font:inherit;color:var(--ink);background:rgba(255,255,255,.07);border:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14);border-radius:16px;padding:24px 16px 10px;transition:box-shadow .3s,background .3s;appearance:none}
+.field select{cursor:pointer}
+.field select option{background:#151a26;color:var(--ink)}
+.field textarea{min-height:120px;resize:vertical}
+.field label{position:absolute;left:17px;top:17px;font-size:.98rem;color:var(--faint);pointer-events:none;transition:all .35s var(--ease)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 1.5px var(--sky),0 0 0 4px rgba(92,200,255,.18)}
+.field input:focus+label,.field input:not(:placeholder-shown)+label,.field textarea:focus+label,.field textarea:not(:placeholder-shown)+label,.field.sel label{top:8px;font-size:.72rem;font-weight:600;color:var(--sky)}
+.field.sel::after{content:"";position:absolute;right:18px;top:50%;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+form .btn{width:100%;margin-top:6px}
+
+/* Footer */
+footer{padding:40px 0 40px}
+.foot{padding:40px 40px;display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;border-radius:32px}
+.foot .logo-img{height:76px}
+.foot p{max-width:320px;margin-top:16px;color:var(--muted);font-size:.92rem}
+.foot h4{font-family:Inter;font-size:.78rem;color:var(--faint);margin-bottom:12px;font-weight:600;letter-spacing:0}
+.foot ul{list-style:none;display:grid;gap:8px;font-size:.95rem}
+.foot ul a:hover{color:var(--sky)}
+.legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:20px 8px 0;font-size:.8rem;color:var(--faint)}
+
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:40;width:58px;height:58px;border-radius:50%;background:linear-gradient(180deg,#3ee07a,#1fb85a);display:grid;place-items:center;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 12px 30px -8px rgba(37,211,102,.7);transition:transform .5s var(--ease)}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px}
+
+/* Reveal */
+[data-r]{opacity:0;transform:translateY(40px) scale(.97);filter:blur(10px);transition:opacity 1.2s var(--ease),transform 1.2s var(--ease),filter 1.2s var(--ease);transition-delay:var(--d,0s)}
+[data-r].in{opacity:1;transform:none;filter:none}
+
+@media (max-width:1000px){
+  .products{grid-template-columns:1fr 1fr}
+  .feats,.steps{grid-template-columns:1fr 1fr}
+  .steps{row-gap:24px}.rail{display:none}
+  .contact{grid-template-columns:1fr}
+  .nav ul,.nav>.btn{display:none}
+  .menu-btn{display:grid}
+  .nav.open{border-radius:30px;flex-wrap:wrap}
+  .nav.open ul{display:flex;flex-direction:column;width:100%;padding:10px 0 6px}
+  .nav.open ul a{padding:14px 12px;font-size:1.02rem}
+  .dots{display:none}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}
+  section.s{padding:100px 0}
+  header{top:10px;padding:0 10px}
+  .products,.feats,.steps,.row,.stats{grid-template-columns:1fr}
+  .product{min-height:0}.product h3{margin-top:28px}
+  .cap{padding:24px 22px}
+  .cta,form,.foot{padding:30px 22px}
+  .intro-m{top:12vh;padding:0 16px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+  [data-r]{opacity:1;transform:none;filter:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- Refração do vidro líquido: desloca o fundo nas bordas, como uma lente -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="lg" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feImage x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" result="map"
+      href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'><defs><linearGradient id='r' x1='0' x2='1' y1='0' y2='0'><stop offset='0' stop-color='%23ff0000'/><stop offset='1' stop-color='%23000000'/></linearGradient><linearGradient id='g' x1='0' x2='0' y1='0' y2='1'><stop offset='0' stop-color='%2300ff00'/><stop offset='1' stop-color='%23000000'/></linearGradient><filter id='b' x='-20%' y='-20%' width='140%' height='140%'><feGaussianBlur stdDeviation='5'/></filter></defs><rect width='100' height='100' fill='%23000'/><rect width='100' height='100' fill='url(%23r)'/><rect width='100' height='100' fill='url(%23g)' style='mix-blend-mode:screen'/><rect x='9' y='14' width='82' height='72' rx='18' fill='rgb(128,128,128)' filter='url(%23b)'/></svg>"/>
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="34" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<canvas id="scene" aria-hidden="true"></canvas>
+<div class="veil"></div>
+<div class="shade" id="shade"></div>
+<div class="progress" id="progress"></div>
+
+<header id="header">
+  <nav class="nav glass lq" id="nav">
+    <a href="#inicio" aria-label="Cepercon Pré-Moldados - início"><img class="logo-img" src="assets/logo-dark.png" alt="Cepercon Pré-Moldados" width="608" height="270"></a>
+    <ul>
+      <li><a href="#montagem">A obra</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#obras">Obras</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#processo">Processo</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn btn-blue mag wa-link" href="#" target="_blank" rel="noopener">Orçamento</a>
+    <button class="menu-btn" aria-label="Abrir menu" id="menuBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 9h16M4 15h16"/></svg></button>
+  </nav>
+</header>
+
+<main id="inicio">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-in" id="heroIn">
+      <span class="chip glass lq fade" style="--d:.2s"><span class="dot"></span> Imbuia · Santa Catarina · desde 2019</span>
+      <h1><span class="ln"><span style="--d:.35s">É pré-moldado.</span></span><span class="ln"><span class="grad" style="--d:.5s">Pra vida toda.</span></span></h1>
+      <p class="lead fade" style="--d:.9s">Estruturas de concreto armado fabricadas com precisão e montadas em tempo recorde.</p>
+      <div class="hero-ctas fade" style="--d:1.1s">
+        <a class="btn btn-blue mag wa-link" href="#" target="_blank" rel="noopener">Solicitar orçamento</a>
+        <a class="btn btn-glass glass lq mag" href="#montagem">Ver a obra <span class="arrow">↓</span></a>
+      </div>
+    </div>
+    <div class="scroll-cue fade" style="--d:1.6s"><span>Role para montar</span><i></i></div>
+  </section>
+
+  <!-- MONTAGEM (scroll controla a obra) -->
+  <section id="montagem">
+    <div class="stick">
+      <div class="intro-m" id="introM">
+        <h2>Peça por peça.</h2>
+        <p>Role e acompanhe a equipe montando um galpão, inspirado nas obras da Cepercon em Imbuia.</p>
+      </div>
+      <div class="wrap">
+        <div class="cap glass lq thick" id="cap">
+          <div class="body" id="capBody">
+            <div class="k"><span id="capK">Etapa 1</span><b id="capN">01 / 08</b></div>
+            <h3 id="capT">Fundações</h3>
+            <p id="capP">Cálices de concreto posicionados com precisão: a base que recebe cada pilar.</p>
+          </div>
+          <div class="bar"><i id="capBar"></i></div>
+        </div>
+        <div class="dots glass lq" id="dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="s">
+    <div class="wrap">
+      <p class="eyebrow" data-r>Quem somos</p>
+      <p class="big-text" id="bigText" style="margin-top:18px">A Cepercon nasceu em 2019, em Imbuia, com um propósito simples: fabricar peças de concreto armado que durem a vida toda. Atendemos construtoras, produtores rurais, prefeituras e famílias que querem agilidade na obra sem abrir mão da resistência.</p>
+      <div class="stats">
+        <div class="stat glass lq thick" data-r><strong><span class="count" data-to="7">0</span>+</strong><span>anos de mercado</span></div>
+        <div class="stat glass lq thick" data-r style="--d:.1s"><strong class="grad"><span class="count" data-to="100">0</span>%</strong><span>concreto armado</span></div>
+        <div class="stat glass lq thick" data-r style="--d:.2s"><strong>Sob medida</strong><span>peças para o seu projeto</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBRAS (carrossel) -->
+  <section id="obras" class="s">
+    <div class="wrap obras-head">
+      <div>
+        <p class="eyebrow" data-r>Obras realizadas</p>
+        <h2 class="h2" data-r style="margin-bottom:0">Nosso trabalho<br><span class="grad">fala por si.</span></h2>
+      </div>
+      <div class="car-ctrl" data-r>
+        <button class="car-btn glass lq" id="carPrev" aria-label="Obra anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <button class="car-btn glass lq" id="carNext" aria-label="Próxima obra"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <div class="track" id="track" role="region" aria-label="Carrossel de obras" tabindex="0"></div>
+    <div class="car-bar"><div class="rail2"><i id="carFill"></i></div><span id="carCount">1 / 6</span></div>
+  </section>
+
+  <!-- PRODUTOS -->
+  <section id="produtos" class="s">
+    <div class="wrap">
+      <p class="eyebrow" data-r>Produtos</p>
+      <h2 class="h2" data-r>Peças prontas.<br><span class="grad">Obra mais rápida.</span></h2>
+      <p class="sub" data-r>Linha completa em concreto armado. Não achou o que precisa? A gente fabrica sob medida.</p>
+      <div class="products">
+        <a class="product glass lq thick tilt wa-link" data-produto="Pilares" href="#" target="_blank" rel="noopener" data-r>
+          <div class="pic" data-model="pilar" data-alt="Pilar de concreto pré-moldado com consolo"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><rect x="8" y="3" width="6" height="26"/><rect x="18" y="9" width="6" height="20"/><path d="M4 29h24"/></svg></div></div>
+          <h3>Pilares</h3><p>Pilares de concreto armado para galpões, mezaninos e muros, na altura do seu projeto.</p><span class="go">Pedir orçamento <span>›</span></span>
+        </a>
+        <a class="product glass lq thick tilt wa-link" data-produto="Vigas" href="#" target="_blank" rel="noopener" data-r style="--d:.06s">
+          <div class="pic" data-model="viga" data-alt="Vigas de concreto com alças de içamento"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><rect x="3" y="9" width="26" height="6"/><path d="M6 15v14M26 15v14"/><path d="M3 29h26"/></svg></div></div>
+          <h3>Vigas</h3><p>Vigas para cobertura, mezanino e travamento da estrutura, prontas para montar.</p><span class="go">Pedir orçamento <span>›</span></span>
+        </a>
+        <a class="product glass lq thick tilt wa-link" data-produto="Placas" href="#" target="_blank" rel="noopener" data-r style="--d:.12s">
+          <div class="pic" data-model="placa" data-alt="Placas de concreto encaixadas em pilares H"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="4" height="23"/><rect x="25" y="5" width="4" height="23"/><path d="M7 9h18v5H7zM7 16h18v5H7zM7 23h18v5H7z"/></svg></div></div>
+          <h3>Placas</h3><p>Placas de concreto para muros e fechamento de galpões. Montagem rápida, sem reboco.</p><span class="go">Pedir orçamento <span>›</span></span>
+        </a>
+        <a class="product glass lq thick tilt wa-link" data-produto="Braços" href="#" target="_blank" rel="noopener" data-r style="--d:.18s">
+          <div class="pic" data-model="braco" data-alt="Braço (consolo) de concreto apoiando viga"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><rect x="5" y="3" width="6" height="26"/><path d="M11 10h15v5l-15 7"/></svg></div></div>
+          <h3>Braços</h3><p>Braços de concreto para apoio e fixação junto aos pilares, fabricados sob medida.</p><span class="go">Pedir orçamento <span>›</span></span>
+        </a>
+        <a class="product glass lq thick tilt wa-link" data-produto="Sapatas" href="#" target="_blank" rel="noopener" data-r>
+          <div class="pic" data-model="sapata" data-alt="Sapata com cálice de concreto"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M4 22h24v6H4z"/><path d="M9 22v-7h14v7"/><path d="M13 15V4h6v11"/></svg></div></div>
+          <h3>Sapatas</h3><p>Sapatas e cálices de fundação que recebem os pilares com firmeza e precisão.</p><span class="go">Pedir orçamento <span>›</span></span>
+        </a>
+        <a class="product glass lq thick tilt wa-link" data-produto="Escadas" href="#" target="_blank" rel="noopener" data-r style="--d:.06s">
+          <div class="pic" data-model="escada" data-alt="Escada pré-moldada de concreto"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M3 28h6v-6h6v-6h6v-6h6V4"/><path d="M3 28h26"/></svg></div></div>
+          <h3>Escadas</h3><p>Escadas pré-moldadas de concreto, prontas para instalar em mezaninos e edificações.</p><span class="go">Pedir orçamento <span>›</span></span>
+        </a>
+        <a class="product glass lq thick tilt wa-link" data-produto="Terças" href="#" target="_blank" rel="noopener" data-r style="--d:.12s">
+          <div class="pic" data-model="terca" data-alt="Terças de concreto empilhadas"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M3 22L16 8l13 14"/><path d="M8 17h16M11 13.5h10"/></svg></div></div>
+          <h3>Terças</h3><p>Terças de concreto para apoiar as telhas e completar a estrutura da cobertura.</p><span class="go">Pedir orçamento <span>›</span></span>
+        </a>
+        <a class="product glass lq thick tilt wa-link" data-produto="Lajes" href="#" target="_blank" rel="noopener" data-r style="--d:.18s">
+          <div class="pic" data-model="laje" data-alt="Lajes alveolares de concreto"><div class="ico"><svg viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M3 12h26v6H3z"/><circle cx="9" cy="15" r="1.2"/><circle cx="16" cy="15" r="1.2"/><circle cx="23" cy="15" r="1.2"/><path d="M6 18v10M26 18v10"/></svg></div></div>
+          <h3>Lajes</h3><p>Painéis de laje para mezaninos e pisos, com menos escoramento e obra mais limpa.</p><span class="go">Pedir orçamento <span>›</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- DIFERENCIAIS -->
+  <section id="diferenciais" class="s">
+    <div class="wrap">
+      <p class="eyebrow" data-r>Por que Cepercon</p>
+      <h2 class="h2" data-r>Mais resistência.<br><span class="grad">Menos dor de cabeça.</span></h2>
+      <div class="feats">
+        <div class="feat glass lq thick tilt" data-r><div class="ic grad">01</div><h3>Durabilidade</h3><p>Concreto armado de alta resistência para sol, chuva e tempo.</p></div>
+        <div class="feat glass lq thick tilt" data-r style="--d:.08s"><div class="ic grad">02</div><h3>Obra mais rápida</h3><p>Peças prontas eliminam etapas e encurtam o prazo.</p></div>
+        <div class="feat glass lq thick tilt" data-r style="--d:.16s"><div class="ic grad">03</div><h3>Padrão de qualidade</h3><p>Medidas precisas e acabamento uniforme em cada lote.</p></div>
+        <div class="feat glass lq thick tilt" data-r style="--d:.24s"><div class="ic grad">04</div><h3>Atendimento local</h3><p>Empresa da região, contato direto pelo WhatsApp.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESSO -->
+  <section id="processo" class="s">
+    <div class="wrap">
+      <p class="eyebrow" data-r>Como funciona</p>
+      <h2 class="h2" data-r>Do orçamento à entrega.<br><span class="grad">Sem complicação.</span></h2>
+      <div class="steps" id="steps">
+        <div class="rail"><i></i></div>
+        <div class="step" data-r><span class="bubble glass lq">1</span><div class="step-card glass lq thick"><h3>Fale com a gente</h3><p>Chame no WhatsApp e conte o que sua obra precisa.</p></div></div>
+        <div class="step" data-r style="--d:.1s"><span class="bubble glass lq">2</span><div class="step-card glass lq thick"><h3>Orçamento</h3><p>Indicamos as peças ideais, quantidades e prazo.</p></div></div>
+        <div class="step" data-r style="--d:.2s"><span class="bubble glass lq">3</span><div class="step-card glass lq thick"><h3>Fabricação</h3><p>Produzimos as peças com controle de qualidade.</p></div></div>
+        <div class="step" data-r style="--d:.3s"><span class="bubble glass lq">4</span><div class="step-card glass lq thick"><h3>Entrega</h3><p>Retirada ou entrega combinada no seu endereço.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="s">
+    <div class="wrap">
+      <div class="cta glass lq thick" data-r>
+        <h2>Vamos tirar sua obra<br><span class="grad">do papel?</span></h2>
+        <p>Orçamento sem compromisso, direto no WhatsApp.</p>
+        <a class="btn btn-blue mag wa-link" href="#" target="_blank" rel="noopener">Chamar no WhatsApp <span class="arrow">→</span></a>
+      </div>
+      <div class="contact">
+        <div class="clist">
+          <a class="citem glass lq thick wa-link" href="#" target="_blank" rel="noopener" data-r>
+            <span class="ci"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></span>
+            <div><small>WhatsApp / Telefone</small><b>(47) 98485-2333</b></div>
+          </a>
+          <a class="citem glass lq thick" href="https://www.instagram.com/ceperconpremoldados/" target="_blank" rel="noopener" data-r style="--d:.08s">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff"/></svg></span>
+            <div><small>Instagram</small><b>@ceperconpremoldados</b></div>
+          </a>
+          <div class="citem glass lq thick" data-r style="--d:.16s">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><small>Localização</small><b>Imbuia · Santa Catarina</b></div>
+          </div>
+        </div>
+        <form id="orcForm" class="glass lq thick" data-r style="--d:.1s">
+          <h3>Pedido de orçamento</h3>
+          <p>Preencha e a mensagem abre direto no nosso WhatsApp.</p>
+          <div class="row">
+            <div class="field"><input id="f-nome" name="nome" required placeholder=" "><label for="f-nome">Nome</label></div>
+            <div class="field"><input id="f-cid" name="cidade" placeholder=" "><label for="f-cid">Cidade</label></div>
+          </div>
+          <div class="field sel">
+            <select id="f-prod" name="produto">
+              <option>Pilares</option><option>Vigas</option><option>Placas</option><option>Braços</option>
+              <option>Sapatas</option><option>Escadas</option><option>Terças</option><option>Lajes</option><option>Outro / sob medida</option>
+            </select>
+            <label for="f-prod">Produto de interesse</label>
+          </div>
+          <div class="field"><textarea id="f-msg" name="msg" placeholder=" "></textarea><label for="f-msg">Medidas, quantidade, prazo...</label></div>
+          <button class="btn btn-blue" type="submit">Enviar pelo WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot glass lq thick">
+      <div>
+        <a href="#inicio"><img class="logo-img" src="assets/logo-dark.png" alt="Cepercon Pré-Moldados" width="608" height="270"></a>
+        <p>Estruturas pré-moldadas de concreto armado. É pré-moldado pra vida toda.</p>
+      </div>
+      <div><h4>Navegação</h4><ul><li><a href="#montagem">A obra</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#produtos">Produtos</a></li><li><a href="#contato">Contato</a></li></ul></div>
+      <div><h4>Contato</h4><ul><li><a class="wa-link" href="#" target="_blank" rel="noopener">(47) 98485-2333</a></li><li><a href="https://www.instagram.com/ceperconpremoldados/" target="_blank" rel="noopener">Instagram</a></li><li>Imbuia · SC</li></ul></div>
+    </div>
+    <div class="legal"><span>© <span id="ano"></span> Cepercon Pré Moldados Ltda · CNPJ 35.290.677/0001-96</span><span>Imbuia · Santa Catarina</span></div>
+  </div>
+</footer>
+
+<a class="wa-float wa-link" href="#" target="_blank" rel="noopener" aria-label="Fale conosco pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/objects/Sky.js"></script>
+<script>
+/* ================== Base ================== */
+const WA = '5547984852333';
+const waUrl = t => `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+document.querySelectorAll('.wa-link').forEach(a => {
+  const p = a.dataset.produto;
+  a.href = waUrl(p ? `Olá, Cepercon! Gostaria de um orçamento de: ${p}.` : 'Olá, Cepercon! Gostaria de solicitar um orçamento.');
+});
+document.getElementById('orcForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const f = new FormData(e.target);
+  const txt = `Olá, Cepercon! Meu nome é ${f.get('nome')}${f.get('cidade') ? ' (' + f.get('cidade') + ')' : ''}.\nTenho interesse em: ${f.get('produto')}.\n${f.get('msg') || ''}`.trim();
+  window.open(waUrl(txt), '_blank', 'noopener');
+});
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+// Refração do vidro só em navegadores Chromium (os demais ficam com o desfoque)
+try { if (navigator.userAgentData && navigator.userAgentData.brands.some(b => /Chromium/.test(b.brand))) document.documentElement.classList.add('lq-on'); } catch (e) {}
+
+const nav = document.getElementById('nav'), header = document.getElementById('header');
+document.getElementById('menuBtn').addEventListener('click', () => nav.classList.toggle('open'));
+nav.querySelectorAll('ul a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fine = matchMedia('(pointer: fine)').matches;
+const clamp = (v, a, b) => Math.min(Math.max(v, a), b);
+const lerp = (a, b, t) => a + (b - a) * t;
+const smooth = t => t * t * (3 - 2 * t);
+
+/* Reveal + contadores */
+const io = new IntersectionObserver(es => es.forEach(x => {
+  if (!x.isIntersecting) return;
+  x.target.classList.add('in'); io.unobserve(x.target);
+  x.target.querySelectorAll('.count').forEach(el => {
+    const to = +el.dataset.to, t0 = performance.now();
+    (function f(t){ const k = Math.min((t - t0) / 1800, 1); el.textContent = Math.round(to * (1 - Math.pow(1 - k, 4))); if (k < 1) requestAnimationFrame(f); })(t0);
+  });
+}), { threshold: .15, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('[data-r]').forEach(el => io.observe(el));
+
+/* Texto que acende palavra por palavra */
+const big = document.getElementById('bigText');
+const HL = ['2019,', 'Imbuia,', 'vida', 'toda.', 'resistência.'];
+big.innerHTML = big.textContent.trim().split(/\s+/).map(w => `<span class="wd${HL.includes(w) ? ' hl' : ''}">${w}</span>`).join(' ');
+const words = [...big.querySelectorAll('.wd')];
+
+/* Brilho seguindo o mouse, tilt e botões magnéticos */
+if (fine && !reduce) {
+  document.querySelectorAll('.glass').forEach(el => {
+    el.addEventListener('pointermove', e => {
+      const r = el.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top;
+      el.style.setProperty('--mx', x + 'px'); el.style.setProperty('--my', y + 'px');
+      if (el.classList.contains('tilt')) el.style.transform = `perspective(1000px) rotateX(${(y / r.height - .5) * -6}deg) rotateY(${(x / r.width - .5) * 8}deg) scale(1.02)`;
+    });
+    el.addEventListener('pointerleave', () => { if (el.classList.contains('tilt')) el.style.transform = ''; });
+  });
+  document.querySelectorAll('.mag').forEach(b => {
+    b.addEventListener('pointermove', e => { const r = b.getBoundingClientRect(); b.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .2}px, ${(e.clientY - r.top - r.height / 2) * .3}px)`; });
+    b.addEventListener('pointerleave', () => b.style.transform = '');
+  });
+}
+
+/* ================== Obras (carrossel) ==================
+   Para colocar a foto: salve em assets/obras/ e preencha "img" (ex.: 'assets/obras/galpao.jpg'). */
+const IG = 'https://www.instagram.com/ceperconpremoldados/';
+const OBRAS = [
+  { tipo: 'Galpão', titulo: 'Galpão de armazenagem', local: 'Imbuia/SC', data: 'Dez 2023', icon: 'galpao', img: 'assets/obras/galpao.jpg', pos: '50% 60%', link: IG + 'p/C1KCxePuRiS/' },
+  { tipo: 'Estrutura', titulo: 'Estrutura com mezanino', local: 'Centro · Imbuia/SC', data: 'Jun 2024', icon: 'estrutura', img: 'assets/obras/estrutura-mezanino.jpg', link: IG + 'p/C8rsAzFOXcR/' },
+  { tipo: 'Contenção', titulo: 'Muro de contenção', local: 'Santa Catarina', data: 'Ago 2026', icon: 'muro', img: 'assets/obras/muro-contencao.jpg', link: IG + 'reel/DcZCxJOxTqJ/', video: true },
+  { tipo: 'Muros', titulo: 'Muro de painéis altos', local: 'Santa Catarina', data: 'Jul 2026', icon: 'muro', img: 'assets/obras/muro-paineis.jpg', link: IG + 'reel/Dav9zzbJWos/', video: true },
+  { tipo: 'Montagem', titulo: 'Entrega de vigas e pilares', local: 'Santa Catarina', data: 'Jul 2026', icon: 'caminhao', img: 'assets/obras/entrega-vigas.jpg', link: IG + 'reel/DaVHLJ4xXFM/', video: true },
+  { tipo: 'Frota', titulo: 'Caminhão munck próprio', local: 'Imbuia/SC', data: 'Jan 2024', icon: 'caminhao', img: 'assets/obras/caminhao-munck.jpg', link: IG + 'reel/C2M9bjIOCRW/', video: true },
+];
+const OB_ICONS = {
+  galpao: '<path d="M10 70V38l40-22 40 22v32"/><path d="M10 38h80"/><path d="M24 70V48h22v22M56 48h20v12H56z"/><path d="M4 70h92"/>',
+  estrutura: '<path d="M14 72V30M38 72V30M62 72V30M86 72V30"/><path d="M10 50h80M10 30l40-16 40 16"/><path d="M4 72h92"/>',
+  muro: '<path d="M10 72V22M50 72V22M90 72V22"/><path d="M10 30h80M10 44h80M10 58h80"/><path d="M4 72h92"/>',
+  caminhao: '<path d="M6 62V40h46v22M52 46h20l12 10v6H52"/><circle cx="20" cy="66" r="6"/><circle cx="70" cy="66" r="6"/><path d="M30 40l26-24 14 4"/><path d="M70 20v10"/>'
+};
+const track = document.getElementById('track');
+track.innerHTML = OBRAS.map((o, i) => `
+  <article class="obra glass">
+    ${o.img ? `<img src="${o.img}" alt="${o.titulo} — Cepercon Pré-Moldados" loading="lazy" draggable="false"${o.pos ? ` style="object-position:${o.pos}"` : ''}>` :
+      `<div class="ph"><svg viewBox="0 0 100 80" fill="none" stroke="#9fe3ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">${OB_ICONS[o.icon]}</svg><small>Foto em breve</small></div>`}
+    <div class="shade-b"></div>
+    ${o.video ? '<span class="play glass lq"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg></span>' : ''}
+    <div class="info glass lq thick">
+      <span class="tag">${String(i + 1).padStart(2, '0')} · ${o.tipo}</span>
+      <h3>${o.titulo}</h3>
+      <div class="meta">${o.local} · ${o.data}</div>
+      <a class="ig" href="${o.link}" target="_blank" rel="noopener">${o.video ? 'Ver vídeo' : 'Ver fotos'} no Instagram ↗</a>
+    </div>
+  </article>`).join('');
+const cards = [...track.children], carFill = document.getElementById('carFill'), carCount = document.getElementById('carCount');
+const carPrev = document.getElementById('carPrev'), carNext = document.getElementById('carNext');
+const step = () => cards[0].getBoundingClientRect().width + 18;
+let carTarget = 0;
+const goCard = d => { const max = track.scrollWidth - track.clientWidth; const base = Math.abs(track.scrollLeft - carTarget) < step() ? carTarget : track.scrollLeft;
+  carTarget = clamp(Math.round(base / step() + d) * step(), 0, max); track.scrollTo({ left: carTarget, behavior: 'smooth' }); };
+carPrev.addEventListener('click', () => goCard(-1));
+carNext.addEventListener('click', () => goCard(1));
+track.addEventListener('keydown', e => { if (e.key === 'ArrowRight') carNext.click(); if (e.key === 'ArrowLeft') carPrev.click(); });
+function onTrack(){
+  const max = track.scrollWidth - track.clientWidth, pr = max > 0 ? track.scrollLeft / max : 0;
+  const vis = track.clientWidth / track.scrollWidth;
+  carFill.style.width = (vis * 100) + '%'; carFill.style.transform = `translateX(${pr * (1 / vis - 1) * 100}%)`;
+  const idx = track.scrollLeft > max - 4 ? cards.length - 1 : Math.min(cards.length - 1, Math.round(track.scrollLeft / step()));
+  carCount.textContent = `${idx + 1} / ${cards.length}`;
+  carPrev.disabled = track.scrollLeft < 4; carNext.disabled = track.scrollLeft > max - 4;
+  // cartões perto da borda encolhem levemente (efeito de profundidade)
+  const tr = track.getBoundingClientRect();
+  cards.forEach(c => { const r = c.getBoundingClientRect(); const out = Math.max(0, tr.left - r.left, r.right - tr.right) / r.width;
+    c.style.setProperty('--sc', 1 - Math.min(out, 1) * .08); c.style.setProperty('--op', 1 - Math.min(out, 1) * .45); });
+}
+track.addEventListener('scroll', onTrack, { passive: true }); addEventListener('resize', onTrack); onTrack();
+// Arrastar com o mouse
+let dragX = null, dragS = 0, moved = 0;
+track.addEventListener('pointerdown', e => { if (e.pointerType !== 'mouse') return; dragX = e.clientX; dragS = track.scrollLeft; moved = 0; });
+addEventListener('pointermove', e => { if (dragX === null) return; const d = e.clientX - dragX; moved = Math.abs(d); if (moved > 5) track.classList.add('drag'); track.scrollLeft = dragS - d; });
+addEventListener('pointerup', () => { if (dragX === null) return; dragX = null; if (track.classList.contains('drag')) { track.classList.remove('drag'); const i = Math.round(track.scrollLeft / step()); track.scrollTo({ left: i * step(), behavior: 'smooth' }); } });
+
+/* ================== Etapas da montagem ================== */
+const CH = [
+  ['Fundações', 'Os cálices de concreto saem da carroceria do munck e são posicionados com precisão.'],
+  ['Pilares', 'Os pilares viajam deitados, são içados, giram no ar e encaixam nos cálices.'],
+  ['Vigas', 'Dois caminhões munck trabalham juntos e a estrutura fica travada no mesmo dia.'],
+  ['Laje do mezanino', 'Painéis de laje criam o mezanino, sem a floresta de escoras da obra convencional.'],
+  ['Estrutura da cobertura', 'Vigas inclinadas e terças de concreto desenham o telhado em duas águas.'],
+  ['Telhado', 'As telhas metálicas fecham a cobertura. O galpão já protege da chuva.'],
+  ['Painéis de fechamento', 'Placas de concreto fecham laterais e fundos, deixando os vãos de acesso livres.'],
+  ['Muro pré-moldado', 'Placas e pilares formam o muro da frente. Rápido, firme e sem reboco.'],
+];
+const dotsEl = document.getElementById('dots');
+dotsEl.innerHTML = CH.map(() => '<span></span>').join('');
+const dotEls = [...dotsEl.children];
+const cap = document.getElementById('cap'), capBody = document.getElementById('capBody');
+const capK = document.getElementById('capK'), capN = document.getElementById('capN'), capT = document.getElementById('capT'), capP = document.getElementById('capP'), capBar = document.getElementById('capBar');
+let curCh = -1, swapT;
+function setChapter(i){
+  if (i === curCh) return; curCh = i;
+  capBody.classList.add('out'); clearTimeout(swapT);
+  swapT = setTimeout(() => {
+    if (i >= CH.length) { capK.textContent = 'Concluída'; capN.textContent = '08 / 08'; capT.textContent = 'Obra pronta.'; capP.textContent = 'Do cálice ao muro: é assim que a Cepercon monta uma obra. É pré-moldado pra vida toda.'; cap.classList.add('done'); }
+    else { capK.textContent = 'Etapa ' + (i + 1); capN.textContent = String(i + 1).padStart(2, '0') + ' / 08'; capT.textContent = CH[i][0]; capP.textContent = CH[i][1]; cap.classList.remove('done'); }
+    capBody.classList.remove('out');
+  }, 260);
+  dotEls.forEach((d, k) => d.classList.toggle('on', k === Math.min(i, CH.length - 1)));
+}
+setChapter(0);
+
+/* ================== Scroll ================== */
+const prog = document.getElementById('progress'), heroIn = document.getElementById('heroIn'), introM = document.getElementById('introM'), shade = document.getElementById('shade');
+const story = document.getElementById('montagem');
+const steps = document.getElementById('steps'), stepEls = steps.querySelectorAll('.step'), rail = steps.querySelector('.rail i');
+const navLinks = [...nav.querySelectorAll('ul a')], secs = navLinks.map(a => document.querySelector(a.getAttribute('href')));
+const S = { hero: 0, story: 0, after: 0, cam: 0 };
+function onScroll(){
+  const y = scrollY, vh = innerHeight, max = document.documentElement.scrollHeight - vh;
+  prog.style.transform = `scaleX(${max > 0 ? y / max : 0})`;
+  header.classList.toggle('shrink', y > 60);
+  // Hero: encolhe e desfoca
+  const h = clamp(y / (vh * .8), 0, 1);
+  S.hero = h;
+  heroIn.style.transform = `translateY(${-h * 80}px) scale(${1 - h * .12})`;
+  heroIn.style.opacity = 1 - h * 1.2;
+  heroIn.style.filter = `blur(${h * 10}px)`;
+  // Montagem
+  const sTop = story.offsetTop, sLen = story.offsetHeight - vh;
+  S.story = clamp((y - sTop) / sLen, 0, 1);
+  const st = S.story;
+  introM.style.opacity = clamp(1 - st * 14, 0, 1) * clamp((y - sTop + vh * .6) / (vh * .6), 0, 1);
+  introM.style.transform = `translateY(${-st * 300}px)`;
+  const after = clamp((y - (sTop + sLen)) / Math.max(max - (sTop + sLen), 1), 0, 1);
+  S.after = after;
+  S.cam = h * .12 + st * .63 + after * .25;
+  shade.style.opacity = clamp((y - (sTop + sLen) + vh * .3) / (vh * .8), 0, 1) * .7;
+  // Texto que acende
+  const br = big.getBoundingClientRect();
+  const wp = clamp((vh * .85 - br.top) / (br.height + vh * .35), 0, 1);
+  const nLit = Math.floor(wp * words.length * 1.05);
+  words.forEach((w, i) => w.classList.toggle('lit', i < nLit));
+  // Processo
+  const r = steps.getBoundingClientRect();
+  const fill = clamp((vh * .75 - r.top) / (r.height + vh * .2), 0, 1);
+  rail.style.setProperty('--fill', fill);
+  stepEls.forEach((s, i) => s.classList.toggle('lit', fill >= i / 4 + .05));
+  let cur = -1; secs.forEach((s, i) => { if (s && s.getBoundingClientRect().top < vh * .45) cur = i; });
+  navLinks.forEach((a, i) => a.classList.toggle('on', i === cur));
+}
+addEventListener('scroll', onScroll, { passive: true });
+addEventListener('resize', onScroll);
+onScroll();
+
+/* ================== Cena 3D: obra da Cepercon com caminhões munck e equipe ================== */
+(function(){
+  if (!window.THREE) return;
+  const canvas = document.getElementById('scene');
+  const mobile = innerWidth < 760;
+  let renderer;
+  try { renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' }); }
+  catch (e) { return; }
+  renderer.setPixelRatio(Math.min(devicePixelRatio, mobile ? 1.5 : 1.75));
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = .62;
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  const maxAniso = renderer.capabilities.getMaxAnisotropy();
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(36, 1, .3, 20000);
+  const UP = new THREE.Vector3(0, 1, 0);
+
+  /* ---- Céu e sol ---- */
+  const sunDir = new THREE.Vector3().setFromSphericalCoords(1, THREE.MathUtils.degToRad(90 - 13), THREE.MathUtils.degToRad(25));
+  if (THREE.Sky) {
+    const sky = new THREE.Sky(); sky.scale.setScalar(9000);
+    const u = sky.material.uniforms;
+    u.turbidity.value = 3.2; u.rayleigh.value = 2.6; u.mieCoefficient.value = .004; u.mieDirectionalG.value = .88;
+    u.sunPosition.value.copy(sunDir);
+    const pmrem = new THREE.PMREMGenerator(renderer);
+    const envScene = new THREE.Scene(); envScene.add(sky);
+    scene.environment = pmrem.fromScene(envScene).texture;
+    scene.add(sky);
+  } else scene.background = new THREE.Color(0x6f8fb8);
+  scene.fog = new THREE.Fog(0xc2b7aa, 140, 1100);
+
+  const sun = new THREE.DirectionalLight(0xffc58a, 4.6);
+  sun.position.copy(sunDir).multiplyScalar(140);
+  sun.castShadow = true;
+  sun.shadow.mapSize.set(mobile ? 1024 : 2048, mobile ? 1024 : 2048);
+  Object.assign(sun.shadow.camera, { left: -50, right: 50, top: 50, bottom: -50, near: 20, far: 320 });
+  sun.shadow.bias = -.0004; sun.shadow.normalBias = .03;
+  scene.add(sun, sun.target);
+  scene.add(new THREE.HemisphereLight(0xc9d6ee, 0x5a4a38, .35));
+
+  /* ---- Texturas procedurais (sem emendas) ---- */
+  function canvasTex(size, base, blotch, noise, dots, repeat){
+    const c = document.createElement('canvas'); c.width = c.height = size; const x = c.getContext('2d');
+    x.fillStyle = `rgb(${base})`; x.fillRect(0, 0, size, size);
+    for (let i = 0; i < blotch.n; i++) {
+      const px = Math.random() * size, py = Math.random() * size, rad = blotch.min + Math.random() * blotch.max;
+      const dark = Math.random() < .55, a = .03 + Math.random() * blotch.a;
+      for (const ox of [-size, 0, size]) for (const oy of [-size, 0, size]) {
+        const cx = px + ox, cy = py + oy;
+        if (cx + rad < 0 || cy + rad < 0 || cx - rad > size || cy - rad > size) continue;
+        const g = x.createRadialGradient(cx, cy, 0, cx, cy, rad);
+        g.addColorStop(0, dark ? `rgba(${blotch.dark},${a})` : `rgba(${blotch.light},${a})`); g.addColorStop(1, 'rgba(0,0,0,0)');
+        x.fillStyle = g; x.fillRect(cx - rad, cy - rad, rad * 2, rad * 2);
+      }
+    }
+    const id = x.getImageData(0, 0, size, size), d = id.data;
+    for (let i = 0; i < d.length; i += 4) { const n = (Math.random() - .5) * noise; d[i] += n; d[i + 1] += n; d[i + 2] += n * .9; }
+    x.putImageData(id, 0, 0);
+    for (let i = 0; i < dots.n; i++) {
+      x.fillStyle = Math.random() < dots.lightRatio ? `rgba(${dots.light},${.3 + Math.random() * .5})` : `rgba(${dots.dark},${.25 + Math.random() * .45})`;
+      x.beginPath(); x.arc(Math.random() * size, Math.random() * size, dots.min + Math.random() * dots.max, 0, 7); x.fill();
+    }
+    const t = new THREE.CanvasTexture(c);
+    t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = maxAniso; t.encoding = THREE.sRGBEncoding;
+    if (repeat) t.repeat.set(repeat, repeat);
+    return t;
+  }
+  const concTex = canvasTex(512, '210,206,198', { n: 260, min: 8, max: 70, a: .035, dark: '90,86,80', light: '255,255,250' }, 14, { n: 2600, min: .3, max: 1.4, lightRatio: .15, light: '240,238,232', dark: '50,47,43' });
+  const concBump = concTex.clone(); concBump.encoding = THREE.LinearEncoding; concBump.needsUpdate = true;
+  const grassTex = canvasTex(512, '78,98,52', { n: 420, min: 10, max: 70, a: .14, dark: '40,56,28', light: '140,150,84' }, 46, { n: 3000, min: .4, max: 1.2, lightRatio: .35, light: '160,170,100', dark: '30,40,20' }, 110);
+  const dirtTex = canvasTex(512, '150,132,108', { n: 300, min: 10, max: 80, a: .12, dark: '90,76,60', light: '200,190,172' }, 40, { n: 5200, min: .5, max: 1.8, lightRatio: .5, light: '215,210,200', dark: '80,70,58' }, 10);
+  const ribTex = (function(){ const c = document.createElement('canvas'); c.width = 256; c.height = 8; const x = c.getContext('2d');
+    for (let i = 0; i < 256; i++) { const v = Math.pow(Math.abs(Math.sin(i / 256 * Math.PI * 10)), .5); const l = Math.round(70 + v * 150); x.fillStyle = `rgb(${l},${l},${l})`; x.fillRect(i, 0, 1, 8); }
+    const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; return t; })();
+
+  const concrete = new THREE.MeshStandardMaterial({ map: concTex, bumpMap: concBump, bumpScale: .006, roughness: .96, color: 0xf2ece2, envMapIntensity: .28 });
+  const concrete2 = new THREE.MeshStandardMaterial({ map: concTex, bumpMap: concBump, bumpScale: .008, roughness: .97, color: 0xd9d1c4, envMapIntensity: .25 });
+  const roofM = new THREE.MeshStandardMaterial({ color: 0x1f8a5a, metalness: .5, roughness: .42, bumpMap: ribTex, bumpScale: .05, envMapIntensity: .9 });
+
+  function boxGeo(w, h, d){
+    const g = new THREE.BoxGeometry(w, h, d), uv = g.attributes.uv, S2 = 3.2;
+    const dims = [[d, h], [d, h], [w, d], [w, d], [w, h], [w, h]];
+    for (let f = 0; f < 6; f++) for (let v = 0; v < 4; v++) { const i = f * 4 + v; uv.setXY(i, uv.getX(i) * dims[f][0] / S2, uv.getY(i) * dims[f][1] / S2); }
+    return g;
+  }
+  const gcache = {};
+  const geo = (w, h, d) => gcache[w + '|' + h + '|' + d] || (gcache[w + '|' + h + '|' + d] = boxGeo(w, h, d));
+  const B1 = (w, h, d) => new THREE.BoxGeometry(w, h, d);
+  function mk(g, mat, x, y, z, parent){ const m = new THREE.Mesh(g, mat); m.position.set(x, y, z); m.castShadow = m.receiveShadow = true; (parent || scene).add(m); return m; }
+
+  /* ---- Terreno ---- */
+  const grassG = new THREE.PlaneGeometry(2400, 2400, 120, 120);
+  (function(){ const pos = grassG.attributes.position, col = []; for (let i = 0; i < pos.count; i++) { const x = pos.getX(i), y = pos.getY(i);
+    const n = Math.sin(x * .013) * Math.cos(y * .011) * .5 + Math.sin(x * .031 + y * .027) * .3 + Math.sin(x * .004 - y * .006) * .4;
+    const v = .78 + n * .16; col.push(v * (1 + n * .05), v, v * (.92 - n * .06)); }
+    grassG.setAttribute('color', new THREE.Float32BufferAttribute(col, 3)); })();
+  const grass = new THREE.Mesh(grassG, new THREE.MeshStandardMaterial({ map: grassTex, vertexColors: true, roughness: 1, envMapIntensity: .4 }));
+  grass.rotation.x = -Math.PI / 2; grass.receiveShadow = true; scene.add(grass);
+  const pad = new THREE.Mesh(new THREE.PlaneGeometry(82, 56), new THREE.MeshStandardMaterial({ map: dirtTex, roughness: 1, envMapIntensity: .4 }));
+  pad.rotation.x = -Math.PI / 2; pad.position.set(-3, .03, 4); pad.receiveShadow = true; scene.add(pad);
+  const floor = new THREE.Mesh(boxGeo(26, .12, 20), concrete2); floor.position.set(0, .06, 0); floor.receiveShadow = true; scene.add(floor);
+
+  const hillMat = new THREE.MeshStandardMaterial({ color: 0x3f5a3a, roughness: 1, envMapIntensity: .3 });
+  for (let i = 0; i < 16; i++) {
+    const a = i / 16 * Math.PI * 2 + Math.random() * .25, R = 720 + Math.random() * 260;
+    const h = new THREE.Mesh(new THREE.SphereGeometry(1, 48, 16), hillMat);
+    h.scale.set(380 + Math.random() * 240, 22 + Math.random() * 38, 200 + Math.random() * 120);
+    h.rotation.y = -a; h.position.set(Math.cos(a) * R, -10, Math.sin(a) * R); scene.add(h);
+  }
+
+  /* ---- Nuvens ---- */
+  (function clouds(){
+    const c = document.createElement('canvas'); c.width = 256; c.height = 128; const x = c.getContext('2d');
+    for (let i = 0; i < 26; i++) { const px = 40 + Math.random() * 176, py = 50 + Math.random() * 40 - Math.abs(px - 128) * .15, r = 18 + Math.random() * 30;
+      const g = x.createRadialGradient(px, py, 0, px, py, r); g.addColorStop(0, 'rgba(255,255,255,.55)'); g.addColorStop(1, 'rgba(255,255,255,0)'); x.fillStyle = g; x.fillRect(px - r, py - r, r * 2, r * 2); }
+    const t = new THREE.CanvasTexture(c); t.encoding = THREE.sRGBEncoding;
+    for (let i = 0; i < 16; i++) {
+      const s = new THREE.Sprite(new THREE.SpriteMaterial({ map: t, transparent: true, depthWrite: false, fog: false, color: 0xfff3e6, opacity: .7 + Math.random() * .3 }));
+      const a = Math.random() * Math.PI * 2, R = 650 + Math.random() * 600;
+      s.position.set(Math.cos(a) * R, 140 + Math.random() * 160, Math.sin(a) * R); s.scale.set(280 + Math.random() * 260, 120 + Math.random() * 70, 1);
+      scene.add(s);
+    }
+  })();
+
+  /* ---- Árvores ---- */
+  (function trees(){
+    const nA = mobile ? 45 : 90, nR = mobile ? 70 : 150;
+    const trunkG = new THREE.CylinderGeometry(.22, .38, 1, 6); trunkG.translate(0, .5, 0);
+    const trunkM = new THREE.MeshStandardMaterial({ color: 0x4a3828, roughness: 1 });
+    const leafM = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 1, flatShading: true, envMapIntensity: .25 });
+    const crownG = new THREE.IcosahedronGeometry(1, 2);
+    (function(){ const p = crownG.attributes.position, v = new THREE.Vector3(), m = {};
+      for (let i = 0; i < p.count; i++) { v.fromBufferAttribute(p, i); const k = v.x.toFixed(3) + v.y.toFixed(3) + v.z.toFixed(3); if (!(k in m)) m[k] = .82 + Math.random() * .3; v.multiplyScalar(m[k]); p.setXYZ(i, v.x, v.y, v.z); }
+      crownG.computeVertexNormals(); })();
+    const PER_R = 4, PER_A = 5;
+    const trunks = new THREE.InstancedMesh(trunkG, trunkM, nA + nR), crowns = new THREE.InstancedMesh(crownG, leafM, nA * PER_A + nR * PER_R);
+    trunks.castShadow = crowns.castShadow = true;
+    const o = new THREE.Object3D(), col = new THREE.Color(); let ti = 0, ci = 0;
+    const tint = dark => { col.setHSL(.24 + Math.random() * .07, .32 + Math.random() * .18, (dark ? .13 : .17) + Math.random() * .09); crowns.setColorAt(ci, col); };
+    const spot = () => { const a = Math.random() * Math.PI * 2, R = 165 + Math.pow(Math.random(), .8) * 260; return [Math.cos(a) * R, Math.sin(a) * R]; };
+    for (let i = 0; i < nA; i++) {
+      const [x, z] = spot(), H = 15 + Math.random() * 10, W = 4.2 + Math.random() * 2;
+      o.position.set(x, 0, z); o.rotation.set(0, 0, 0); o.scale.set(1.1, H, 1.1); o.updateMatrix(); trunks.setMatrixAt(ti++, o.matrix);
+      for (let k = 0; k < PER_A; k++) {
+        const a = k / PER_A * Math.PI * 2 + Math.random(), r = k === 0 ? 0 : W * .55;
+        o.position.set(x + Math.cos(a) * r, H + (k === 0 ? .6 : -.4 + Math.random() * .6), z + Math.sin(a) * r);
+        o.rotation.set(0, Math.random() * 6, 0); const s = k === 0 ? W * .8 : W * (.45 + Math.random() * .2);
+        o.scale.set(s, s * .32, s); o.updateMatrix(); tint(true); crowns.setMatrixAt(ci++, o.matrix);
+      }
+    }
+    for (let i = 0; i < nR; i++) {
+      const [x, z] = spot(), H = 3 + Math.random() * 3.5, s = 2.4 + Math.random() * 2.8;
+      o.position.set(x, 0, z); o.rotation.set(0, 0, 0); o.scale.set(1.3, H + s * .5, 1.3); o.updateMatrix(); trunks.setMatrixAt(ti++, o.matrix);
+      for (let k = 0; k < PER_R; k++) {
+        const a = Math.random() * Math.PI * 2, r = k === 0 ? 0 : s * (.45 + Math.random() * .25), ss = k === 0 ? s : s * (.55 + Math.random() * .25);
+        o.position.set(x + Math.cos(a) * r, H + s * .8 + (Math.random() - .3) * s * .6, z + Math.sin(a) * r);
+        o.rotation.set(Math.random(), Math.random() * 6, 0); o.scale.set(ss, ss * (.85 + Math.random() * .3), ss); o.updateMatrix(); tint(false); crowns.setMatrixAt(ci++, o.matrix);
+      }
+    }
+    crowns.instanceColor.needsUpdate = true;
+    scene.add(trunks, crowns);
+  })();
+
+  /* ---- Materiais de equipamentos ---- */
+  const whiteM = new THREE.MeshStandardMaterial({ color: 0xf4f4f2, roughness: .32, metalness: .25, envMapIntensity: 1 });
+  const redM = new THREE.MeshStandardMaterial({ color: 0xd8261c, roughness: .36, metalness: .35, envMapIntensity: .9 });
+  const darkM = new THREE.MeshStandardMaterial({ color: 0x1d1f24, roughness: .7, metalness: .2 });
+  const rubberM = new THREE.MeshStandardMaterial({ color: 0x121212, roughness: .95 });
+  const rimM = new THREE.MeshStandardMaterial({ color: 0x9aa0a6, metalness: .8, roughness: .35 });
+  const glassM = new THREE.MeshStandardMaterial({ color: 0x0e1622, roughness: .05, metalness: .9, envMapIntensity: 1.6 });
+  const steelM = new THREE.MeshStandardMaterial({ color: 0xb8bcc2, metalness: .85, roughness: .3 });
+  const lightM = new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0xfff2cc, emissiveIntensity: .6 });
+  const amberM = new THREE.MeshStandardMaterial({ color: 0xffa000, emissive: 0xff7a00, emissiveIntensity: 1.2 });
+  const blueM = new THREE.MeshStandardMaterial({ color: 0x2e68ff, roughness: .4, metalness: .3 });
+  const woodM = new THREE.MeshStandardMaterial({ color: 0x9a7a52, roughness: .95 });
+  const coneM = new THREE.MeshStandardMaterial({ color: 0xff5a1a, roughness: .6 });
+  const unitBox = new THREE.BoxGeometry(1, 1, 1); unitBox.translate(0, .5, 0);
+  const tmpDir = new THREE.Vector3();
+  function rod(mat, sx, sz){ const m = new THREE.Mesh(unitBox, mat); m.castShadow = true; m.userData.sx = sx; m.userData.sz = sz; scene.add(m); return m; }
+  function between(m, a, b){ tmpDir.subVectors(b, a); const L = Math.max(tmpDir.length(), .001); m.position.copy(a); m.quaternion.setFromUnitVectors(UP, tmpDir.multiplyScalar(1 / L)); m.scale.set(m.userData.sx, L, m.userData.sz); }
+
+  /* ---- Caminhão munck (Volvo branco com lança vermelha, como na frota da Cepercon) ---- */
+  function makeTruck(x, z, yaw){
+    const g = new THREE.Group(); g.position.set(x, 0, z); g.rotation.y = yaw; scene.add(g);
+    const wg = new THREE.CylinderGeometry(.52, .52, .38, 22); wg.rotateX(Math.PI / 2);
+    const rg = new THREE.CylinderGeometry(.3, .3, .4, 14); rg.rotateX(Math.PI / 2);
+    [3.1, -1.6, -2.9].forEach(ax => [-1.05, 1.05].forEach(s => { mk(wg, rubberM, ax, .52, s, g); mk(rg, rimM, ax, .52, s * 1.02, g); }));
+    mk(B1(8.8, .35, 1.1), darkM, -.2, 1.0, 0, g);
+    mk(B1(2.1, 2.3, 2.45), whiteM, 3.35, 2.27, 0, g);
+    mk(B1(.9, .5, 2.4), whiteM, 3.8, 3.5, 0, g);
+    mk(B1(.06, 1.0, 2.2), glassM, 4.42, 2.85, 0, g);
+    mk(B1(1.1, .75, .04), glassM, 3.55, 2.85, 1.24, g); mk(B1(1.1, .75, .04), glassM, 3.55, 2.85, -1.24, g);
+    mk(B1(.08, .7, 1.7), darkM, 4.44, 1.75, 0, g);
+    mk(B1(.28, .38, 2.5), darkM, 4.5, 1.15, 0, g);
+    mk(B1(.05, .18, .42), lightM, 4.48, 1.58, .86, g); mk(B1(.05, .18, .42), lightM, 4.48, 1.58, -.86, g);
+    mk(B1(.22, .14, .7), amberM, 3.6, 3.8, 0, g);
+    mk(B1(1.6, .9, .55), darkM, 2.0, 1.55, 1.0, g); // tanque
+    mk(B1(1.2, 1.1, 2.4), redM, 1.6, 1.75, 0, g);   // base da lança
+    [1.6, -3.7].forEach(ax => [-1, 1].forEach(s => { mk(B1(.3, .3, 2.0), redM, ax, 1.45, s * 2.0, g); mk(B1(.22, 1.3, .22), darkM, ax, .8, s * 2.95, g); mk(B1(.7, .08, .7), woodM, ax, .05, s * 2.95, g); }));
+    mk(B1(5.6, .25, 2.45), darkM, -1.6, 1.32, 0, g);
+    mk(boxGeo(4.4, .26, 1.9), concrete, -1.7, 1.58, 0, g); mk(boxGeo(4.4, .26, 1.9), concrete2, -1.7, 1.86, 0, g);
+    const turret = mk(new THREE.CylinderGeometry(.48, .58, 1.0, 18), redM, 0, 0, 0);
+    const T = { g, turret, boom1: rod(redM, .52, .58), boom2o: rod(redM, .44, .48), boom2m: rod(new THREE.MeshStandardMaterial({ color: 0xb81f17, roughness: .4, metalness: .35 }), .37, .41), boom2i: rod(steelM, .3, .34), cyl: rod(steelM, .16, .16), cyl2: rod(steelM, .14, .14) };
+    g.updateMatrixWorld(true);
+    T.pivot = g.localToWorld(new THREE.Vector3(1.6, 3.3, 0));
+    T.bed = g.localToWorld(new THREE.Vector3(-1.7, 2.0, 0));
+    T.op = g.localToWorld(new THREE.Vector3(1.5, 0, 3.6));
+    T.yawQ = new THREE.Quaternion().setFromAxisAngle(UP, yaw);
+    turret.position.copy(T.pivot).y -= .75;
+    T.tip = T.bed.clone().add(new THREE.Vector3(0, 4, 0));
+    const cg = new THREE.BufferGeometry(); cg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(6), 3));
+    T.cable = new THREE.Line(cg, new THREE.LineBasicMaterial({ color: 0x1a1a1a })); scene.add(T.cable);
+    const sg = new THREE.BufferGeometry(); sg.setAttribute('position', new THREE.BufferAttribute(new Float32Array(12), 3));
+    T.slings = new THREE.LineSegments(sg, new THREE.LineBasicMaterial({ color: 0xffb300 })); scene.add(T.slings);
+    T.hook = mk(B1(.45, .6, .35), new THREE.MeshStandardMaterial({ color: 0xffc400, roughness: .5, metalness: .3 }), 0, 0, 0);
+    return T;
+  }
+  const truckA = makeTruck(8, 13.2, Math.PI);       // frente, entre o galpão e o muro
+  const truckB = makeTruck(-19.5, 0, -Math.PI / 2); // lateral esquerda
+  const trucks = [truckA, truckB];
+
+  const v1 = new THREE.Vector3(), v2 = new THREE.Vector3(), v3 = new THREE.Vector3(), v4 = new THREE.Vector3();
+  function poseCrane(T, tip){
+    const P = T.pivot;
+    v1.set(tip.x - P.x, 0, tip.z - P.z); const hd = v1.length() || 1; v1.multiplyScalar(1 / hd);
+    T.turret.rotation.y = Math.atan2(-v1.z, v1.x);
+    const a1 = clamp(1.0 + (tip.y - P.y) * .03 - hd * .006, .8, 1.35), L1 = 5.4;
+    v2.copy(P).addScaledVector(v1, Math.cos(a1) * L1); v2.y += Math.sin(a1) * L1; // articulação
+    between(T.boom1, P, v2);
+    v3.subVectors(tip, v2); const L2 = v3.length(); v3.multiplyScalar(1 / L2);
+    v4.copy(v2).addScaledVector(v3, Math.min(L2, 6.5));
+    between(T.boom2o, v2, v4);
+    v4.copy(v2).addScaledVector(v3, Math.min(L2, 12.5)); between(T.boom2m, v2, v4);
+    between(T.boom2i, v2, tip);
+    v4.copy(P).addScaledVector(v1, .6); v4.y -= .5; v3.copy(P).lerp(v2, .55); between(T.cyl, v4, v3);
+    v4.copy(v2).addScaledVector(UP, -.4); v3.copy(v2).lerp(tip, .3); between(T.cyl2, v4, v3);
+  }
+
+  /* ---- Canteiro: contêiner com logo, paletes, cones, estoque ---- */
+  (function props(){
+    const ct = new THREE.Group(); ct.position.set(-31, 0, 19); ct.rotation.y = .35; scene.add(ct);
+    mk(boxGeo(6.06, 2.6, 2.44), whiteM, 0, 1.5, 0, ct);
+    mk(B1(6.1, .32, 2.48), blueM, 0, 2.62, 0, ct);
+    mk(B1(1.0, 2.0, .05), darkM, -2.1, 1.2, 1.23, ct);
+    mk(B1(1.4, .8, .05), glassM, 2.0, 1.7, 1.23, ct);
+    [-2.6, 2.6].forEach(x => mk(boxGeo(.4, .2, 2.4), concrete2, x, .1, 0, ct));
+    new THREE.TextureLoader().load('assets/logo-light.png', t => { t.encoding = THREE.sRGBEncoding; t.anisotropy = maxAniso;
+      const pl = new THREE.Mesh(new THREE.PlaneGeometry(2.6, 1.15), new THREE.MeshStandardMaterial({ map: t, transparent: true, roughness: .5 })); pl.position.set(.15, 1.55, 1.235); ct.add(pl); });
+    // paletes de blocos (como no pátio do galpão)
+    for (let i = 0; i < 8; i++) { const x = -33 + (i % 4) * 1.6, z = -8 + Math.floor(i / 4) * 1.6;
+      mk(B1(1.2, .14, 1.2), woodM, x, .07, z); mk(boxGeo(1.15, .9 + Math.random() * .3, 1.15), concrete2, x, .6, z); }
+    // estoque de vigas e pilares deitados
+    for (let i = 0; i < 4; i++) { mk(B1(.3, .12, 2.4), woodM, -27 + i * 2, .06, -14); }
+    for (let r = 0; r < 3; r++) for (let k = 0; k < 4 - r; k++) mk(boxGeo(7, .45, .45), r % 2 ? concrete : concrete2, -24, .35 + r * .47, -15.5 + k * .55 + r * .27);
+    // cones
+    const coneG = new THREE.ConeGeometry(.18, .6, 12); coneG.translate(0, .3, 0);
+    [[3, 10.4], [13, 10.4], [3, 16.3], [13, 16.3], [-16.5, -4], [-16.5, 4], [-22.5, -4], [-22.5, 4]].forEach(([x, z]) => mk(coneG, coneM, x, 0, z));
+  })();
+
+  /* ---- Galpão (inspirado na obra do Centro de Imbuia) ---- */
+  const pieces = [];
+  const eul = new THREE.Euler();
+  function add(phase, w, h, d, x, y, z, mat, rx){
+    const m = new THREE.Mesh(geo(w, h, d), mat || concrete); m.castShadow = m.receiveShadow = true; m.visible = false; scene.add(m);
+    pieces.push({ m, phase, x, y, z, w, h, d, qT: new THREE.Quaternion().setFromEuler(eul.set(rx || 0, 0, 0)), tall: h > Math.max(w, d) });
+  }
+  const B = 6, NX = 4, NZ = 3, X0 = -12, Z0 = -9, L1 = 4.8, EAVE = 9, RISE = 2.5;
+  const xs = [...Array(NX + 1)].map((_, i) => X0 + i * B), zs = [-9, -3, 3, 9];
+  zs.forEach(z => xs.forEach(x => add(0, 1.7, .7, 1.7, x, .47, z, concrete2)));
+  zs.forEach(z => xs.forEach(x => { const top = Math.abs(z) === 9 ? EAVE : L1; add(1, .55, top - .8, .55, x, .8 + (top - .8) / 2, z); }));
+  zs.forEach(z => { for (let i = 0; i < NX; i++) add(2, B - .55, .7, .4, X0 + i * B + B / 2, L1 - .35, z); });
+  xs.forEach(x => { for (let j = 0; j < NZ; j++) add(2, .4, .7, B - .55, x, L1 - .35, Z0 + j * B + B / 2); });
+  for (let j = 0; j < NZ; j++) for (let i = 0; i < NX; i++) for (let k = 0; k < 2; k++)
+    add(3, 2.97, .26, B - .1, X0 + i * B + 1.5 + k * 3, L1 + .13, Z0 + j * B + B / 2, k ? concrete2 : concrete);
+  // Cobertura em duas águas: vigas de beiral, vigas inclinadas e terças
+  const slope = Math.atan(RISE / 9), sLen = Math.hypot(9, RISE);
+  [-9, 9].forEach(z => { for (let i = 0; i < NX; i++) add(4, B - .55, .7, .4, X0 + i * B + B / 2, EAVE - .35, z); });
+  xs.forEach(x => [-1, 1].forEach(s => add(4, .35, .6, sLen, x, EAVE + .3 + RISE / 2, s * 4.5, concrete, s * slope)));
+  const topSurf = z => EAVE + .61 + RISE * (1 - Math.abs(z) / 9);
+  [-6, -3, 3, 6].forEach(z => { for (let i = 0; i < NX; i++) add(4, B - .4, .18, .2, X0 + i * B + B / 2, topSurf(z) + .09, z, concrete2, Math.sign(z) * slope); });
+  // Telhado metálico verde (como o galpão concluído da Cepercon)
+  [-1, 1].forEach(s => { for (let i = 0; i < NX; i++) add(5, B + .02, .05, sLen + .9, X0 + i * B + B / 2, topSurf(4.5) + .2 - .45 * Math.tan(slope), s * 4.95, roofM, s * slope); });
+  // Painéis de fechamento
+  for (let r = 0; r < 4; r++) {
+    const y = .8 + r * 2.1 + 1.03;
+    for (let i = 0; i < NX; i++) add(6, B, 2.06, .2, X0 + i * B + B / 2, y, Z0 - .4);
+    [0, 3].forEach(i => add(6, B, 2.06, .2, X0 + i * B + B / 2, y, 9.4));
+    for (let j = 0; j < NZ; j++) { add(6, .2, 2.06, B, X0 - .4, y, Z0 + j * B + B / 2); add(6, .2, 2.06, B, X0 + NX * B + .4, y, Z0 + j * B + B / 2); }
+  }
+  // Muro pré-moldado
+  const MZ = 18;
+  for (let i = 0; i <= 10; i++) add(7, .3, 2.6, .3, -15 + i * 3, 1.3, MZ, concrete2);
+  for (let i = 0; i < 10; i++) { if (i === 4 || i === 5) continue; for (let r = 0; r < 4; r++) add(7, 2.72, .5, .09, -15 + i * 3 + 1.5, .28 + r * .52, MZ); }
+
+  // Cada caminhão iça uma peça por vez; cada etapa ocupa a mesma fatia do scroll
+  const NPH = 8, SPAN = .92, span = SPAN / NPH;
+  for (let k = 0; k < NPH; k++) {
+    const ph = pieces.filter(p => p.phase === k);
+    [0, 1].forEach(t => {
+      const mine = ph.filter(p => (t === 0) === (p.x >= 0)).sort((a, b) => t === 0 ? (Math.abs(a.z - 13) + Math.abs(a.x - 8)) - (Math.abs(b.z - 13) + Math.abs(b.x - 8)) : (a.x - b.x) || (a.z - b.z));
+      const gap = span * .9 / Math.max(mine.length, 1);
+      mine.forEach((p, i) => { p.truck = trucks[t]; p.s = k * span + i * gap; p.dur = gap * .96; });
+    });
+  }
+  pieces.forEach(p => {
+    const T = p.truck;
+    p.lyHalf = p.tall ? Math.max(p.w, p.d) / 2 : p.h / 2;
+    p.q0 = p.tall ? T.yawQ.clone().multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 0, 1), Math.PI / 2)) : T.yawQ.clone();
+    p.bed = T.bed.clone(); p.bed.y += .2 + p.lyHalf;
+    p.top = new THREE.Vector3(p.x, p.y, p.z);
+    p.yMax = Math.max(p.y + p.h / 2, p.bed.y) + 3.5;
+    const ax = p.w >= p.d && p.w >= p.h ? new THREE.Vector3(1, 0, 0) : p.d >= p.h ? new THREE.Vector3(0, 0, 1) : new THREE.Vector3(0, 1, 0);
+    p.axis = ax.multiplyScalar(Math.max(p.w, p.h, p.d) * .38);
+  });
+
+  /* ---- Equipe: operários de capacete e colete ---- */
+  const skinMs = [0xc68e62, 0x8d5a3b, 0xe0b48f, 0xa96f4a].map(c => new THREE.MeshStandardMaterial({ color: c, roughness: .8 }));
+  const vestM = new THREE.MeshStandardMaterial({ color: 0xd4ff2a, emissive: 0x3a4a00, emissiveIntensity: .25, roughness: .6 });
+  const vestO = new THREE.MeshStandardMaterial({ color: 0xff7a1a, emissive: 0x4a1a00, emissiveIntensity: .2, roughness: .6 });
+  const shirtM = new THREE.MeshStandardMaterial({ color: 0x2e68ff, roughness: .85 });
+  const pantsM = new THREE.MeshStandardMaterial({ color: 0x2a2f3a, roughness: .9 });
+  const hatW = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: .3 }), hatY = new THREE.MeshStandardMaterial({ color: 0xffd000, roughness: .3 });
+  const headG = new THREE.SphereGeometry(.12, 14, 12), hatG = new THREE.SphereGeometry(.145, 14, 8, 0, Math.PI * 2, 0, Math.PI / 2), brimG = new THREE.CylinderGeometry(.18, .18, .02, 16), handG = new THREE.SphereGeometry(.05, 8, 6);
+  const workers = [];
+  function makeWorker(x, z, role, extra){
+    const g = new THREE.Group(); g.position.set(x, 0, z); scene.add(g);
+    const skin = skinMs[workers.length % skinMs.length];
+    const leg = s => { const L = new THREE.Group(); L.position.set(0, .92, s * .1); g.add(L); mk(B1(.15, .88, .16), pantsM, 0, -.44, 0, L); mk(B1(.26, .1, .17), darkM, .05, -.87, 0, L); return L; };
+    const arm = s => { const A = new THREE.Group(); A.position.set(0, 1.5, s * .26); g.add(A); mk(B1(.11, .56, .11), shirtM, 0, -.28, 0, A); mk(handG, skin, 0, -.6, 0, A); return A; };
+    mk(B1(.26, .62, .44), role === 'op' ? vestO : vestM, 0, 1.24, 0, g);
+    mk(B1(.2, .04, .45), new THREE.MeshStandardMaterial({ color: 0xdddddd, metalness: .6, roughness: .2 }), .03, 1.12, 0, g);
+    mk(B1(.24, .14, .5), shirtM, 0, 1.5, 0, g);
+    mk(headG, skin, 0, 1.72, 0, g);
+    const hm = role === 'op' ? hatW : (workers.length % 2 ? hatY : hatW);
+    mk(hatG, hm, 0, 1.76, 0, g); mk(brimG, hm, .04, 1.765, 0, g);
+    const w = Object.assign({ g, legL: leg(-1), legR: leg(1), armL: arm(-1), armR: arm(1), role, target: new THREE.Vector3(x, 0, z), home: new THREE.Vector3(x, 0, z), phase: Math.random() * 6, speed: 1.25 + Math.random() * .35, face: Math.random() * 6, wait: Math.random() * 3, look: null }, extra || {});
+    workers.push(w); return w;
+  }
+  trucks.forEach((T, i) => {
+    makeWorker(T.op.x, T.op.z, 'op', { truck: T });
+    makeWorker(T.bed.x + 2, T.bed.z + 3, 'rig', { truck: T, side: 1 });
+    makeWorker(T.bed.x - 2, T.bed.z + 3, 'rig', { truck: T, side: -1 });
+  });
+  const WP = [[-27, -5], [-25, 6], [-28, 14], [-14, 14], [16, 22], [21, 4], [-4, 13], [20, -12], [-20, -13]].map(([x, z]) => new THREE.Vector3(x, 0, z));
+  for (let i = 0; i < (mobile ? 2 : 4); i++) { const p = WP[i * 2 % WP.length]; makeWorker(p.x, p.z, 'walk'); }
+
+  function updWorker(w, dt, time){
+    const p = w.g.position;
+    if (w.role === 'walk' && p.distanceTo(w.target) < .3) { w.wait -= dt; if (w.wait <= 0) { w.target.copy(WP[Math.floor(Math.random() * WP.length)]); w.wait = 2 + Math.random() * 5; } }
+    const dx = w.target.x - p.x, dz = w.target.z - p.z, dist = Math.hypot(dx, dz);
+    let walk = 0;
+    if (dist > .3) { const st = Math.min(w.speed * dt * (dist > 6 ? 1.5 : 1), dist); p.x += dx / dist * st; p.z += dz / dist * st; w.faceT = Math.atan2(-dz, dx); w.phase += dt * w.speed * (dist > 6 ? 8 : 5.6); walk = 1; }
+    else if (w.look) w.faceT = Math.atan2(-(w.look.z - p.z), w.look.x - p.x);
+    if (w.faceT !== undefined) { let d = w.faceT - w.g.rotation.y; d = Math.atan2(Math.sin(d), Math.cos(d)); w.g.rotation.y += d * Math.min(1, dt * 6); }
+    w.walkK = (w.walkK || 0) + (walk - (w.walkK || 0)) * Math.min(1, dt * 8);
+    const s = Math.sin(w.phase) * .6 * w.walkK;
+    w.legL.rotation.z = s; w.legR.rotation.z = -s;
+    p.y = Math.abs(Math.sin(w.phase)) * .045 * w.walkK;
+    let aL = -s * .8, aR = s * .8;
+    if (w.guide && !walk) { aL = 2.55 + Math.sin(time * 3.2 + w.phase) * .28; aR = 1.3 + Math.sin(time * 2.1) * .15; }
+    else if (w.role === 'op' && !walk) { aL = aR = 1.05 + Math.sin(time * 1.7) * .05; }
+    w.armL.rotation.z += (aL - w.armL.rotation.z) * Math.min(1, dt * 7);
+    w.armR.rotation.z += (aR - w.armR.rotation.z) * Math.min(1, dt * 7);
+  }
+
+  /* ---- Loop ---- */
+  let sp = 0, sc = 0, mx = 0, my = 0, smx = 0, smy = 0, vo = 0;
+  addEventListener('pointermove', e => { mx = e.clientX / innerWidth - .5; my = e.clientY / innerHeight - .5; }, { passive: true });
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+  const K = [[0, .62, 90, 9, 10], [.12, .55, 70, 16, 4.5], [.45, .15, 50, 13, 4], [.75, -.5, 42, 9, 4], [1, 1.1, 46, 6.5, 5]];
+  function camAt(t){
+    let i = 0; while (i < K.length - 2 && t > K[i + 1][0]) i++;
+    const a = K[i], b = K[i + 1], k = smooth(clamp((t - a[0]) / (b[0] - a[0]), 0, 1));
+    return [lerp(a[1], b[1], k), lerp(a[2], b[2], k), lerp(a[3], b[3], k), lerp(a[4], b[4], k)];
+  }
+  function resize(){ renderer.setSize(innerWidth, innerHeight, false); camera.aspect = innerWidth / innerHeight; camera.fov = innerWidth < 640 ? 50 : 36; camera.updateProjectionMatrix(); }
+  addEventListener('resize', resize); resize();
+  const clock = new THREE.Clock(), tip = new THREE.Vector3(), hookP = new THREE.Vector3(), e1 = new THREE.Vector3(), e2 = new THREE.Vector3();
+
+  function frame(){
+    requestAnimationFrame(frame);
+    if (document.hidden) return;
+    const dt = Math.min(clock.getDelta(), .05), time = clock.elapsedTime, k = reduce ? 1 : 1 - Math.pow(.002, dt);
+    sp += (S.story - sp) * k; sc += (S.cam - sc) * k;
+    smx += (mx - smx) * .04; smy += (my - smy) * .04;
+    const p = sp;
+
+    // Peças: carroceria → içamento → giro → descida
+    let phase = 0, placed = 0;
+    trucks.forEach(T => { T.active = null; });
+    for (const q of pieces) {
+      const t = clamp((p - q.s) / q.dur, 0, 1);
+      if (t <= 0) { q.m.visible = false; continue; }
+      q.m.visible = true; phase = Math.max(phase, q.phase);
+      const m = q.m;
+      if (t >= 1) { m.position.copy(q.top); m.quaternion.copy(q.qT); placed++; continue; }
+      let rk = 0;
+      if (t < .22) { const u = smooth(t / .22); m.position.copy(q.bed); m.position.y = lerp(q.bed.y, q.yMax, u); m.quaternion.copy(q.q0); }
+      else if (t < .72) { rk = smooth((t - .22) / .5); m.position.set(lerp(q.bed.x, q.x, rk), q.yMax, lerp(q.bed.z, q.z, rk)); m.quaternion.copy(q.q0).slerp(q.qT, rk); }
+      else { rk = 1; const u = easeOut((t - .72) / .28), sw = (1 - u) * .18; m.position.set(q.x + Math.sin(time * 2.4) * sw, lerp(q.yMax, q.y, u), q.z + Math.cos(time * 2) * sw); m.quaternion.copy(q.qT); }
+      q.rk = rk; q.t = t;
+      q.truck.active = q;
+    }
+    setChapter(placed === pieces.length ? NPH : phase);
+    capBar.style.width = (placed / pieces.length * 100) + '%';
+
+    // Lanças munck seguem a peça içada
+    trucks.forEach(T => {
+      const q = T.active;
+      if (q) {
+        const half = lerp(q.lyHalf, q.h / 2, q.rk);
+        tip.set(q.m.position.x, q.m.position.y + half + 3.4, q.m.position.z);
+      } else tip.copy(T.bed).add(e1.set(0, 4.2, 0));
+      T.tip.lerp(tip, q ? .5 : .06);
+      poseCrane(T, T.tip);
+      const hy = q ? q.m.position.y + lerp(q.lyHalf, q.h / 2, q.rk) + 1.3 : T.tip.y - 1.6;
+      hookP.set(T.tip.x, hy, T.tip.z); T.hook.position.copy(hookP);
+      const ca = T.cable.geometry.attributes.position.array; ca[0] = T.tip.x; ca[1] = T.tip.y; ca[2] = T.tip.z; ca[3] = hookP.x; ca[4] = hookP.y + .3; ca[5] = hookP.z; T.cable.geometry.attributes.position.needsUpdate = true;
+      if (q) {
+        q.m.updateMatrixWorld();
+        e1.copy(q.axis); q.m.localToWorld(e1); e2.copy(q.axis).negate(); q.m.localToWorld(e2);
+        const ty = q.m.position.y + lerp(q.lyHalf, q.h / 2, q.rk); e1.y = Math.max(e1.y, ty - .05); e2.y = Math.max(e2.y, ty - .05);
+        T.slings.geometry.attributes.position.array.set([hookP.x, hookP.y - .3, hookP.z, e1.x, e1.y, e1.z, hookP.x, hookP.y - .3, hookP.z, e2.x, e2.y, e2.z]);
+        T.slings.geometry.attributes.position.needsUpdate = true; T.slings.visible = true;
+      } else T.slings.visible = false;
+    });
+
+    // Equipe
+    workers.forEach(w => {
+      w.guide = false; w.look = null;
+      if (w.role === 'rig') {
+        const q = w.truck.active;
+        if (q && q.t > .35) { w.target.set(q.x + w.side * 1.9, 0, q.z + (q.z > 12 ? -1.6 : 1.6)); w.look = q.m.position; w.guide = q.t > .6; }
+        else if (q) { w.target.set(w.truck.bed.x + w.side * 1.8, 0, w.truck.bed.z + 2.6); w.look = q.m.position; }
+        else w.target.copy(w.home);
+      } else if (w.role === 'op') { w.look = w.truck.active ? w.truck.active.m.position : w.truck.tip; }
+      updWorker(w, dt, time);
+    });
+
+    // Câmera
+    const [th, r, hgt, ly] = camAt(sc);
+    const rr = r * (innerWidth < 640 ? 1.35 : 1), T0 = th + smx * .1;
+    camera.position.set(Math.sin(T0) * rr, hgt - smy * 2.5, Math.cos(T0) * rr + 3);
+    camera.lookAt(0, ly, 3);
+    const want = innerWidth > 1000 ? clamp((S.hero - .5) * 2, 0, 1) * .14 * (1 - S.after) : 0;
+    vo += (want - vo) * .08;
+    if (vo > .002) camera.setViewOffset(innerWidth, innerHeight, -innerWidth * vo, 0, innerWidth, innerHeight); else camera.clearViewOffset();
+
+    renderer.render(scene, camera);
+  }
+  frame();
+})();
+
+
+/* ================== Imagens dos produtos: render 3D de cada peça ================== */
+(function productRenders(){
+  if (!window.THREE) return;
+  const pics = [...document.querySelectorAll('.pic[data-model]')];
+  if (!pics.length) return;
+  function run(){
+    let r;
+    try { r = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true }); } catch (e) { return; }
+    const W = 720, H = 540;
+    r.setPixelRatio(1); r.setSize(W, H, false); r.setClearColor(0x000000, 0);
+    r.outputEncoding = THREE.sRGBEncoding; r.toneMapping = THREE.ACESFilmicToneMapping; r.toneMappingExposure = .72;
+    r.shadowMap.enabled = true; r.shadowMap.type = THREE.PCFSoftShadowMap;
+
+    // Concreto
+    const c = document.createElement('canvas'); c.width = c.height = 256; const x = c.getContext('2d');
+    x.fillStyle = 'rgb(212,208,200)'; x.fillRect(0, 0, 256, 256);
+    for (let i = 0; i < 140; i++) { const px = Math.random() * 256, py = Math.random() * 256, rad = 6 + Math.random() * 40, a = .02 + Math.random() * .04;
+      for (const ox of [-256, 0, 256]) for (const oy of [-256, 0, 256]) { const g = x.createRadialGradient(px + ox, py + oy, 0, px + ox, py + oy, rad);
+        g.addColorStop(0, Math.random() < .5 ? `rgba(90,86,80,${a})` : `rgba(255,255,250,${a})`); g.addColorStop(1, 'rgba(0,0,0,0)'); x.fillStyle = g; x.fillRect(px + ox - rad, py + oy - rad, rad * 2, rad * 2); } }
+    const id = x.getImageData(0, 0, 256, 256), d = id.data; for (let i = 0; i < d.length; i += 4) { const n = (Math.random() - .5) * 14; d[i] += n; d[i + 1] += n; d[i + 2] += n; } x.putImageData(id, 0, 0);
+    for (let i = 0; i < 900; i++) { x.fillStyle = `rgba(60,56,52,${.2 + Math.random() * .4})`; x.beginPath(); x.arc(Math.random() * 256, Math.random() * 256, .3 + Math.random() * 1.1, 0, 7); x.fill(); }
+    const tex = new THREE.CanvasTexture(c); tex.wrapS = tex.wrapT = THREE.RepeatWrapping; tex.encoding = THREE.sRGBEncoding; tex.anisotropy = r.capabilities.getMaxAnisotropy();
+    const conc = new THREE.MeshStandardMaterial({ map: tex, bumpMap: tex, bumpScale: .004, color: 0xd8d2c8, roughness: .9 });
+    const conc2 = new THREE.MeshStandardMaterial({ map: tex, bumpMap: tex, bumpScale: .004, color: 0xc4bcaf, roughness: .92 });
+    const wood = new THREE.MeshStandardMaterial({ color: 0x9a7650, roughness: .95 });
+    const steel = new THREE.MeshStandardMaterial({ color: 0x8d949c, roughness: .4, metalness: .8 });
+    const lineM = new THREE.LineBasicMaterial({ color: 0xffb300 });
+
+    // Ajuda: UV do box em metros (textura não estica)
+    function boxG(w, h, dd){ const g = new THREE.BoxGeometry(w, h, dd), uv = g.attributes.uv, dims = [[dd, h], [dd, h], [w, dd], [w, dd], [w, h], [w, h]];
+      for (let f = 0; f < 6; f++) for (let v = 0; v < 4; v++) { const i = f * 4 + v; uv.setXY(i, uv.getX(i) * dims[f][0] / 1.6, uv.getY(i) * dims[f][1] / 1.6); } return g; }
+    const B = (w, h, dd, m, px, py, pz, p) => { const me = new THREE.Mesh(boxG(w, h, dd), m); me.position.set(px, py, pz); me.castShadow = me.receiveShadow = true; p.add(me); return me; };
+    const EXT = (pts, depth, m, p, holes) => { const sh = new THREE.Shape(pts.map(q => new THREE.Vector2(q[0], q[1]))); (holes || []).forEach(h => sh.holes.push(h));
+      const g = new THREE.ExtrudeGeometry(sh, { depth, bevelEnabled: true, bevelThickness: .008, bevelSize: .008, bevelSegments: 1, curveSegments: 28 });
+      g.attributes.uv.array.forEach((v, i, a) => { a[i] = v / 1.6; });
+      const me = new THREE.Mesh(g, m); me.castShadow = me.receiveShadow = true; p.add(me); return me; };
+    const loop = (px, py, pz, p, ry) => { const t = new THREE.Mesh(new THREE.TorusGeometry(.07, .013, 8, 18, Math.PI), steel); t.position.set(px, py, pz); t.rotation.y = ry || 0; t.castShadow = true; p.add(t); };
+    const bar = (px, py, pz, h, p) => { const t = new THREE.Mesh(new THREE.CylinderGeometry(.016, .016, h, 8), steel); t.position.set(px, py, pz); t.castShadow = true; p.add(t); };
+    const sleeper = (px, pz, len, p, alongX) => B(alongX ? len : .14, .1, alongX ? .14 : len, wood, px, .05, pz, p);
+    const sling = (p, pts) => { const g = new THREE.BufferGeometry().setFromPoints(pts.map(q => new THREE.Vector3(...q))); p.add(new THREE.LineSegments(g, lineM)); };
+
+    const M = {
+      pilar(g){
+        B(.4, 4, .4, conc, 0, 2, 0, g);
+        EXT([[0, 0], [.34, .26], [.34, .55], [0, .55]], .4, conc, g).position.set(.2, 2.85, -.2);
+        bar(-.1, 4.14, -.1, .28, g); bar(.1, 4.14, .1, .28, g);
+        sleeper(-.7, 1.1, .7, g); sleeper(2.0, 1.1, .7, g);
+        B(4, .4, .4, conc2, .65, .3, 1.1, g);
+      },
+      viga(g){
+        sleeper(-1.8, -.25, 1.2, g); sleeper(1.8, -.25, 1.2, g);
+        B(5, .6, .3, conc, 0, .4, 0, g); B(5, .6, .3, conc2, 0, .4, -.55, g);
+        loop(-1.5, .7, 0, g); loop(1.5, .7, 0, g); loop(-1.5, .7, -.55, g); loop(1.5, .7, -.55, g);
+      },
+      placa(g){
+        [-1.35, 1.35].forEach((px, k) => {
+          B(.5, .15, .5, conc2, px, .075, 0, g);
+          B(.3, 2.4, .08, conc2, px, 1.35, .085, g); B(.3, 2.4, .08, conc2, px, 1.35, -.085, g);
+          B(.1, 2.4, .1, conc2, px + (k ? .1 : -.1), 1.35, 0, g);
+        });
+        for (let i = 0; i < 3; i++) B(2.62, .48, .07, conc, 0, .4 + i * .5, 0, g);
+        B(2.62, .48, .07, conc, 0, 3.0, 0, g);
+        loop(-.8, 3.24, 0, g); loop(.8, 3.24, 0, g);
+        sling(g, [[-.8, 3.3, 0], [0, 4.1, 0], [.8, 3.3, 0], [0, 4.1, 0]]);
+      },
+      braco(g){
+        B(.45, 3.4, .45, conc, 0, 1.7, 0, g);
+        EXT([[0, 0], [.95, .35], [.95, .62], [0, .62]], .45, conc, g).position.set(.225, 2.4, -.225);
+        EXT([[0, 0], [-.95, .35], [-.95, .62], [0, .62]], .45, conc, g).position.set(-.225, 2.4, -.225);
+        B(1.5, .45, .3, conc2, 1.05, 3.245, 0, g);
+        bar(-.1, 3.54, -.1, .28, g); bar(.1, 3.54, .1, .28, g);
+      },
+      sapata(g){
+        B(1.6, .35, 1.6, conc2, 0, .175, 0, g);
+        B(.9, .8, .17, conc, 0, .75, .365, g); B(.9, .8, .17, conc, 0, .75, -.365, g);
+        B(.17, .8, .56, conc, .365, .75, 0, g); B(.17, .8, .56, conc, -.365, .75, 0, g);
+      },
+      escada(g){
+        const n = 7, rr = .175, t = .28, pts = [[0, 0]];
+        for (let i = 0; i < n; i++) { pts.push([i * t, (i + 1) * rr]); pts.push([(i + 1) * t, (i + 1) * rr]); }
+        pts.push([n * t, n * rr - .34]); pts.push([.55, 0]);
+        EXT(pts, 1.1, conc, g).position.set(-n * t / 2, 0, -.55);
+        B(1.1, .2, 1.1, conc2, n * t / 2 + .55, n * rr - .1, 0, g);
+      },
+      terca(g){
+        sleeper(-1.4, 0, 1.3, g); sleeper(1.4, 0, 1.3, g);
+        [-.42, -.14, .14, .42].forEach((pz, i) => B(4, .2, .14, i % 2 ? conc2 : conc, 0, .2, pz, g));
+        B(.12, .08, 1.0, wood, -1.4, .34, 0, g); B(.12, .08, 1.0, wood, 1.4, .34, 0, g);
+        [-.28, 0, .28].forEach((pz, i) => B(4, .2, .14, i % 2 ? conc : conc2, .15, .48, pz, g));
+      },
+      laje(g){
+        const mk = () => { const hs = []; [-.45, -.225, 0, .225, .45].forEach(hx => { const h = new THREE.Path(); h.absarc(hx, .1, .062, 0, Math.PI * 2, false); hs.push(h); }); return hs; };
+        const prof = [[-.6, 0], [.6, 0], [.6, .2], [-.6, .2]];
+        sleeper(0, -1.1, 1.4, g, true); sleeper(0, 1.1, 1.4, g, true);
+        EXT(prof, 3.2, conc, g, mk()).position.set(0, .1, -1.6);
+        B(1.4, .08, .12, wood, 0, .34, -1.1, g); B(1.4, .08, .12, wood, 0, .34, 1.1, g);
+        EXT(prof, 3.2, conc2, g, mk()).position.set(0, .38, -1.6);
+      },
+    };
+
+    pics.forEach(el => {
+      const s = new THREE.Scene();
+      s.add(new THREE.HemisphereLight(0xdfe8ff, 0x6a5e50, .55));
+      const k = new THREE.DirectionalLight(0xffe6c8, 2.1); k.castShadow = true; k.shadow.mapSize.set(1024, 1024); k.shadow.bias = -.0005; k.shadow.normalBias = .02; s.add(k, k.target);
+      const rim = new THREE.DirectionalLight(0x9fc4ff, 1.1); rim.position.set(-7, 5, -6); s.add(rim);
+      const ground = new THREE.Mesh(new THREE.PlaneGeometry(80, 80), new THREE.ShadowMaterial({ opacity: .4 })); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; s.add(ground);
+      const g = new THREE.Group(); s.add(g);
+      (M[el.dataset.model] || M.pilar)(g);
+      const box = new THREE.Box3().setFromObject(g), ctr = box.getCenter(new THREE.Vector3()), sz = box.getSize(new THREE.Vector3());
+      const R = Math.max(sz.x, sz.y, sz.z), rad = sz.length() / 2;
+      const cam = new THREE.PerspectiveCamera(28, W / H, .05, 200);
+      const dist = rad / Math.sin(14 * Math.PI / 180) * .8, az = .72, elv = .36;
+      cam.position.set(ctr.x + Math.sin(az) * Math.cos(elv) * dist, ctr.y + Math.sin(elv) * dist, ctr.z + Math.cos(az) * Math.cos(elv) * dist);
+      cam.lookAt(ctr);
+      k.position.copy(ctr).add(new THREE.Vector3(5, 9, 6)); k.target.position.copy(ctr);
+      const e = R * 1.1; Object.assign(k.shadow.camera, { left: -e, right: e, top: e, bottom: -e, near: .1, far: 60 }); k.shadow.camera.updateProjectionMatrix();
+      r.render(s, cam);
+      let url = r.domElement.toDataURL('image/webp', .9); if (url.indexOf('data:image/webp') !== 0) url = r.domElement.toDataURL('image/png');
+      const img = new Image(); img.alt = el.dataset.alt || ''; img.decoding = 'async'; img.src = url;
+      img.onload = () => { el.innerHTML = ''; el.appendChild(img); el.classList.add('ready'); };
+      s.traverse(o => { if (o.geometry) o.geometry.dispose(); });
+    });
+    r.dispose(); try { r.forceContextLoss(); } catch (e) {}
+  }
+  if ('requestIdleCallback' in window) requestIdleCallback(run, { timeout: 1500 }); else setTimeout(run, 800);
+})();
+
+</script>
+</body>
+</html>
